@@ -7,11 +7,10 @@
           </router-link>
         </h1>
       <div>
-        <nav class="header__nav"  v-if="!checkUserData">
+        <nav class="header__nav"  v-if="checkUserData">
           <li class="header__nav-list" @click="switchMenuState">MENU</li>
-          <!-- TODO:ここ問題あり -->
-          <router-link to="#" class="menuAbout__itemWrap-lineNone">
-            <li class="header__nav-list" @click="switchMenuState">POSTING REVIEW</li>
+          <router-link to="/SelectReviewCompany" class="menuAbout__itemWrap-lineNone">
+            <li class="header__nav-list" @click="checkMenuState">POSTING REVIEW</li>
           </router-link>
           <li class="header__nav-list" @click="logout">LOGOUT</li>
           <AboutMenu
@@ -19,10 +18,9 @@
           />
         </nav>
 
-        <!-- TODO:・・・コンポーネントの再定義が上手く出来ていない。 -->
-        <nav class="header__nav" v-if="checkUserData">
+        <nav class="header__nav" v-if="!checkUserData">
           <div>
-            <li class="header__nav-list" @click="switchMenuState">MENU</li>
+            <li class="header__nav-list" @click="checkMenuState">MENU</li>
             <li class="header__nav-list active-login-menu" @click="changeLoginProp">LOGIN</li>
             <li class="header__nav-list active-signup-menu" @click="changeSignUpProp">SIGNUP</li>
           </div>
@@ -51,7 +49,7 @@ import { OpenAboutMenu } from '@/store/models.d';
 })
 export default class Header extends Vue {
 
-  private aboutMenuState: OpenAboutMenu  = false;
+  private aboutMenuState: OpenAboutMenu = false;
   private switchingMenuState: string | null | false = null;
 
   get checkUserData() {
@@ -61,6 +59,12 @@ export default class Header extends Vue {
   get checkAboutMenuState() {
     this.aboutMenuState = toolStoreModule.AboutMenuState;
     return toolStoreModule.AboutMenuState;
+  }
+
+  public checkMenuState(){
+    if (this.aboutMenuState === 'openAboutMenu'){
+      toolStoreModule.switchMenuComponent(false);
+    }
   }
 
   public switchMenuState(){

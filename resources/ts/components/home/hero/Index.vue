@@ -12,12 +12,14 @@
         </div>
         <a class="hero__text-aboutLink" href="#index-about">このアプリについて</a>
       </div>
+      <div v-if="!checkUserData">
         <SignUp
           v-if="checkAuthComponents === 'signUp'"
         />
         <Login
           v-if="checkAuthComponents === 'login'"
         />
+      </div>
     </div>
   </section>
 </template>
@@ -26,6 +28,7 @@
 import { Component,Vue } from 'vue-property-decorator';
 import SignUp from '@/components/Home/hero/auth/SignUp';
 import Login from '@/components/Home/hero/auth/Login';
+import Cookies from "js-cookie";
 import { toolStoreModule } from '@/store/modules/tool';
 
 @Component({
@@ -36,6 +39,10 @@ import { toolStoreModule } from '@/store/modules/tool';
 })
 
 export default class Hero extends Vue {
+
+  get checkUserData() {
+    return Cookies.get('user_id');
+  }
 
   get checkAuthComponents() {
     return toolStoreModule.getAuthComponentsState;
