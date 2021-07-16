@@ -12,8 +12,12 @@
         </div>
         <a class="hero__text-aboutLink" href="#index-about">このアプリについて</a>
       </div>
-        <SignUp/>
-        <Login/>
+        <SignUp
+          v-if="checkAuthComponents === 'signUp'"
+        />
+        <Login
+          v-if="checkAuthComponents === 'login'"
+        />
     </div>
   </section>
 </template>
@@ -22,6 +26,7 @@
 import { Component,Vue } from 'vue-property-decorator';
 import SignUp from '@/components/Home/hero/auth/SignUp';
 import Login from '@/components/Home/hero/auth/Login';
+import { toolStoreModule } from '@/store/modules/tool';
 
 @Component({
   components: {
@@ -30,7 +35,12 @@ import Login from '@/components/Home/hero/auth/Login';
   }
 })
 
-export default class Hero extends Vue {}
+export default class Hero extends Vue {
+
+  get checkAuthComponents() {
+    return toolStoreModule.getAuthComponentsState;
+  }
+}
 </script>
 
 <style lang="scss" scope>
