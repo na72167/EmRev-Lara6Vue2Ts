@@ -6,6 +6,10 @@
             Title
           </router-link>
         </h1>
+
+        <!-- TODO:下処理の再レンタリングが上手く行かない。 -->
+        <!-- 参考予定: Vue.jsでビューの変更がされないときに疑うこと+主な解決策方法 -->
+        <!-- https://qiita.com/bobu_web/items/ec5a98d03758d12ad721#dom%E3%81%8C%E5%86%8D%E3%83%AC%E3%83%B3%E3%83%80%E3%83%AA%E3%83%B3%E3%82%B0%E3%81%95%E3%82%8C%E3%81%9A%E5%A4%89%E6%9B%B4%E5%89%8D%E3%81%AE%E5%80%A4%E3%81%8C%E6%AE%8B%E3%81%A3%E3%81%A6%E3%81%84%E3%82%8B -->
       <div>
         <nav class="header__nav"  v-if="checkUserData">
           <li class="header__nav-list" @click="switchMenuState">MENU</li>
