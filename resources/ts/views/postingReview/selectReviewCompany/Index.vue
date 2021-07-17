@@ -4,6 +4,9 @@
 <script lang="ts" scoped>
 import { Component, Vue } from 'vue-property-decorator';
 
-@Component
+@Component({
+  components: {
+  }
+})
 export default class PostingReview extends Vue {}
 </script>

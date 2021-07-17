@@ -12,6 +12,7 @@ import {
 
 import store from '@/store';
 import { SignUpOrLogin,SignUp,Login,OpenAboutMenu } from '@/store/models.d';
+import Cookies from "js-cookie";
 
 @Module({
   dynamic: true,
@@ -25,6 +26,7 @@ class ToolStore extends VuexModule {
   private loading: boolean = false
   private aboutMenuState: OpenAboutMenu = false
   public authComponentsState: SignUpOrLogin = 'signUp'
+  public loginUser: any = null;
 
   get isLoading(): boolean {
     return this.loading;
@@ -66,6 +68,11 @@ class ToolStore extends VuexModule {
   @Action
   public setLoading(): void {
     this.SET_LOADING();
+  }
+
+  @Action
+  public setLoginUser(): void {
+    this.loginUser = Cookies.get('user_id');
   }
 
   @Action

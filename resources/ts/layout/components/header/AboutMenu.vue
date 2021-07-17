@@ -3,9 +3,10 @@
   <nav class="menuAbout">
     <ul class="menuAbout__itemWrap">
       <!-- リンク関係 -->
+      <!-- TODO:メニューから特定のリンクに飛んだ際にメニューバーが閉まらない -->
       <span v-for="aboutMenu in aboutMenus" :key="aboutMenu.id">
         <router-link :to="aboutMenu.link" class="menuAbout__itemWrap-lineNone">
-          <li class="menuAbout__itemWrap-item" @click="switchMenuState">{{aboutMenu.text}}</li>
+          <li class="menuAbout__itemWrap-item" @click="checkMenuState">{{aboutMenu.text}}</li>
         </router-link>
       </span>
     </ul>
@@ -16,21 +17,23 @@
 import { Component,Vue } from 'vue-property-decorator';
 import { aboutMenu } from '@/utils/header';
 import { toolStoreModule } from '@/store/modules/tool';
+import { OpenAboutMenu } from '@/store/models.d';
 
 // Vue.js to TypeScriptの書き方一覧
 // https://qiita.com/ryo2132/items/4d43209ea89ad1297426
 
 @Component
 export default class AboutMenu extends Vue {
-  public aboutMenus = aboutMenu;
-  private aboutMenuState: string | false  = false;
-  private switchingMenuState: string | null | false = null;
 
-  public switchMenuState(){
-    // aboutMenuState内の要素を反転させる。
-    this.switchingMenuState = this.aboutMenuState === false ? 'openAboutMenu' : false;
-    toolStoreModule.switchMenuComponent(this.switchingMenuState);
-  }
+  // private aboutMenuState: OpenAboutMenu = false;
+  public aboutMenus = aboutMenu;
+
+  // public checkMenuState(){
+  //   if (this.aboutMenuState === 'openAboutMenu'){
+  //     toolStoreModule.switchMenuComponent(false);
+  //   }
+  // }
+
 }
 </script>
 

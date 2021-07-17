@@ -49,6 +49,7 @@
 <script lang="ts" scoped>
 import { Component, Vue } from 'vue-property-decorator';
 import { EmailFormErrMsg,PasswordFormErrMsg,CommonErrMsg } from '@/utils/auth';
+import { toolStoreModule } from '@/store/modules/tool';
 import axios from "axios";
 import Cookies from "js-cookie"
 import { LOGIN_NUM } from '@/utils/auth-mapping';
@@ -62,6 +63,8 @@ export default class Login extends Vue {
   public emailErrMsg: string | null = '';
   public passwordErrMsg: string | null = '';
   public commonErrMsg: string | null = '';
+
+  public loginUser?: any;
 
   public isSubmit: boolean = false;
   public loginButton = 'ログインする';
@@ -153,15 +156,24 @@ export default class Login extends Vue {
           password: this.password,
         }
 
-        const loginUser = await axios.post('/api/login',loginParams);
-        console.dir(loginUser);
+        this.loginUser = await axios.post('/api/login',loginParams);
+        console.dir(this.loginUser);
 
-        Cookies.set('user_id', loginUser.data.id);
-        Cookies.set('email', loginUser.data.email);
-        Cookies.set('roll', loginUser.data.roll);
+        if(this.loginUser == false){
+          this.commonErrMsg = null;
+          this.passwordErrMsg = null;
+          this.passwordErrMsg = '登録記録がありません。ユーザー登録をお願いします。';
+          return false
+        }
+
+        Cookies.set('user_id', this.loginUser.data.id);
+        Cookies.set('email', this.loginUser.data.email);
+        Cookies.set('roll', this.loginUser.data.roll);
+
+        toolStoreModule.setLoginUser;
 
         // this.$store.dispatch("users/setLoginUserInfo");
-        this.loginButton = "登録する";
+        this.loginButton = "ログインする";
         this.isSubmit = false;
 
         // マイページへ飛ばすパスを書く。
@@ -170,7 +182,7 @@ export default class Login extends Vue {
       } catch (e) {
         console.log("登録処理中に例外エラーが発生しました。");
         this.commonErrMsg = CommonErrMsg.commonErrMsg;
-        this.loginButton = '登録する';
+        this.loginButton = 'ログインする';
         this.isSubmit = false;
       }
       // 上手く動かない。

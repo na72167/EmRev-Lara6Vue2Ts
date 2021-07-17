@@ -35,12 +35,13 @@ class AuthController extends Controller
     $loginUser = User::where('email',$request['email'])->first();
     Log::debug("検索結果".$loginUser);
 
+    //TODO:ログイン情報が存在しない場合に「$loginUser->email」部分でエラーが出る。
     if($request['email'] === $loginUser->email && Hash::check($request['password'],$loginUser->password)){
       Log::debug("条件が合致しました");
       return response()->json($loginUser,200);
     }else{
       Log::debug("条件に合致しませんでした");
-      return true;
+      return response()->json(false);
     };
 
   }

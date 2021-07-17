@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\applyCompany;
 
 use App\Http\Controllers\Controller;
-use App\CompanyInformation;
+use App\Models\CompanyInformation;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Http\Request;
