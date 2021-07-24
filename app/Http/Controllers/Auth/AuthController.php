@@ -75,9 +75,8 @@ class AuthController extends Controller
     Log::debug('退会処理を行います。');
     Log::debug("リクエスト内容".$request);
 
-    $UserData = User::find($request['user_id']);
-    $UserData->deleted_at = Carbon::now();
-    $UserData->save();
+    $UserData = User::where('id',$request['user_id'])
+      ->update(['deleted_at' => Carbon::now()]);
 
     Log::debug("保存結果".$UserData);
 
