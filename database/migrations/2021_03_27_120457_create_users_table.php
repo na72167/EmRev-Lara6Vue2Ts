@@ -19,7 +19,7 @@ class CreateUsersTable extends Migration
             $table->string('password',255);
             $table->integer('roll')->default(100);
             $table->tinyInteger('report_flg')->default(0);
-            $table->tinyInteger('deleted_at')->nullable();
+            $table->softDeletes();
             $table->timestamp('auth_key_limit')->useCurrent()->nullable();
             $table->timestamp('created_at')->useCurrent()->nullable();
             $table->timestamp('updated_at')->useCurrent()->nullable();

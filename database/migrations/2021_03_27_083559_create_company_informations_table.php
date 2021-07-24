@@ -29,7 +29,7 @@ class CreateCompanyInformationsTable extends Migration
             $table->integer('average_annual_income')->nullable();
             $table->integer('average_age')->nullable();
             $table->integer('number_of_reviews')->nullable();
-            $table->tinyInteger('deleted_at')->nullable();
+            $table->softDeletes();
             $table->timestamp('created_at')->useCurrent()->nullable();
             $table->timestamp('updated_at')->useCurrent()->nullable();
         });

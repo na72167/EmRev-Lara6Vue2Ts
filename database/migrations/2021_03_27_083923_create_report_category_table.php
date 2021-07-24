@@ -16,7 +16,7 @@ class CreateReportCategoryTable extends Migration
         Schema::create('ReportCategorys', function (Blueprint $table) {
             $table->integer('id',true);
             $table->string('name',255)->nullable();
-            $table->tinyInteger('deleted_at')->nullable();
+            $table->softDeletes();
             $table->timestamp('created_at')->useCurrent()->nullable();
             $table->timestamp('updated_at')->useCurrent()->nullable();
         });

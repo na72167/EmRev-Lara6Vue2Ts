@@ -17,7 +17,7 @@ class CreateReviewLikesTable extends Migration
             $table->integer('id',true);
             $table->integer('user_id');
             $table->integer('favorite_recode');
-            $table->tinyInteger('deleted_at')->nullable();
+            $table->softDeletes();
             $table->timestamp('created_at')->useCurrent()->nullable();
             $table->timestamp('updated_at')->useCurrent()->nullable();
         });

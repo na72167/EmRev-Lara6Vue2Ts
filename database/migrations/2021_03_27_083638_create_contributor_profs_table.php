@@ -26,7 +26,7 @@ class CreateContributorProfsTable extends Migration
             $table->string('currently_department',255)->nullable();
             $table->string('currently_position',255)->nullable();
             $table->tinyInteger('dm_state')->default(0);
-            $table->tinyInteger('deleted_at')->nullable();
+            $table->softDeletes();
             $table->timestamps();
         });
     }

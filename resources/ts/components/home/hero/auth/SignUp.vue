@@ -84,9 +84,7 @@ export default class SignUp extends Vue {
   // };
   // private sesLimit: SIGNUP_NUM.SES_LIMIT;
 
-  private async signUp() {
-
-    //TODO:
+  public async signUp() {
 
       //Emailのバリデーション
     if (!this.email) {

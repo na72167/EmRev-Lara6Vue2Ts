@@ -22,7 +22,7 @@ class CreateGeneralProfsTable extends Migration
             $table->string('profImg',255)->nullable();
             $table->integer('zip')->nullable();
             $table->string('addr',255)->nullable();
-            $table->tinyInteger('deleted_at')->nullable();
+            $table->softDeletes();
             $table->timestamp('created_at')->useCurrent()->nullable();
             $table->timestamp('updated_at')->useCurrent()->nullable();
         });

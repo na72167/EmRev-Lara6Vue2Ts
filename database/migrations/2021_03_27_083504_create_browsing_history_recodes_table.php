@@ -18,7 +18,7 @@ class CreateBrowsingHistoryRecodesTable extends Migration
             $table->integer('id',true);
             $table->integer('review_id');
             $table->integer('user_id');
-            $table->tinyInteger('deleted_at')->nullable();
+            $table->softDeletes();
             $table->timestamp('browsing_history_date')->CURRENT_TIMESTAMP();
             $table->timestamp('created_at')->useCurrent()->nullable();
             $table->timestamp('updated_at')->useCurrent()->nullable();
