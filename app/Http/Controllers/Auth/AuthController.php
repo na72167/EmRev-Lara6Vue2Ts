@@ -9,9 +9,12 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Str;
+use Carbon\Carbon;
 
 class AuthController extends Controller
 {
+  // クエリビルダ
+  // https://readouble.com/laravel/5.6/ja/queries.html
 
   // ユーザー登録機能
   protected function register(Request $request){
@@ -43,10 +46,7 @@ class AuthController extends Controller
       Log::debug("条件に合致しませんでした");
       return response()->json(false);
     };
-
   }
-
-
 
   //パスワード変更用認証キー
   protected function passwordReceive(Request $request){
@@ -65,5 +65,22 @@ class AuthController extends Controller
       return false;
     };
 
+  }
+
+  // Laravel,PHPで日付や時間を操作・取得したいとき
+  // https://qiita.com/morocco/items/427914b276badcd394b6
+  //退会機能
+  protected function withdrawal(Request $request){
+
+    Log::debug('退会処理を行います。');
+    Log::debug("リクエスト内容".$request);
+
+    $UserData = User::find($request['user_id']);
+    $UserData->deleted_at = Carbon::now();
+    $UserData->save();
+
+    Log::debug("保存結果".$UserData);
+
+    return $UserData;
   }
 }

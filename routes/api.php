@@ -18,6 +18,7 @@ Route::post('/register', 'Auth\AuthController@register')->name('register');
 Route::post('/login', 'Auth\AuthController@login')->name('login');
 Route::post('/passwordReminder', 'Auth\AuthController@updatePassword')->name('passwordReminder');
 Route::post('/passwordReceive', 'Auth\AuthController@passwordReceive')->name('passwordReceive');
+Route::post('/withdrawal', 'Auth\AuthController@withdrawal')->name('withdrawal');
 
 //権限付加
 Route::post('/contributorRegistration', 'roll\changeOfAuthorityController@contributorRegistration')->name('contributorRegistration');

@@ -6,5 +6,5 @@ export const aboutMenu = [
   { id: '5', text: '登録社員一覧', link: '#' },
   { id: '6', text: 'パスワード変更', link: '#' },
   { id: '7', text: 'レビュー会社登録申請', link: '/ApplyCompany' },
-  { id: '8', text: '退会する', link: '#' },
+  { id: '8', text: '退会する', link: '/Withdrawal' },
 ];
