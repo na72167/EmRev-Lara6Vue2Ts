@@ -5,6 +5,7 @@ import MyPage from '@/views/myPage/Index.vue'
 import ApplyCompany from '@/views/applyCompany/Index.vue'
 import SelectReviewCompany from '@/views/postingReview/selectReviewCompany/Index.vue'
 import ReviewRegisterForm from '@/views/postingReview/postingReview/Index.vue'
+import DirectMessage from '@/views/dm/Index.vue'
 
 Vue.use(VueRouter);
 
@@ -33,6 +34,11 @@ const routes: Array<RouteConfig> = [
     path: '/reviewRegisterForm/:company_id',
     name: 'ReviewRegisterForm',
     component: ReviewRegisterForm
+  },
+  {
+    path: '/directMessage/:toUser_id',
+    name: 'DirectMessage',
+    component: DirectMessage
   },
 ]
 
