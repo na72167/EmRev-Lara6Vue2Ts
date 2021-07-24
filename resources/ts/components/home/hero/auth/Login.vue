@@ -147,8 +147,8 @@ export default class Login extends Vue {
       try {
         this.isSubmit = true;
         this.loginButton = 'ログイン中・・・';
-        // TODO:ロード画面実装
-        // this.$store.dispatch("app/setLoading");
+
+        toolStoreModule.setLoading();
         console.log("ログイン処理に入りました。");
 
         const loginParams = {
@@ -162,7 +162,7 @@ export default class Login extends Vue {
         if(this.loginUser == false){
           this.commonErrMsg = null;
           this.passwordErrMsg = null;
-          this.passwordErrMsg = '登録記録がありません。ユーザー登録をお願いします。';
+          this.passwordErrMsg = '登録記録がありません。先にユーザー登録をお願いします。';
           return false
         }
 
@@ -172,7 +172,7 @@ export default class Login extends Vue {
 
         toolStoreModule.setLoginUser;
 
-        // this.$store.dispatch("users/setLoginUserInfo");
+        toolStoreModule.clearLoading();
         this.loginButton = "ログインする";
         this.isSubmit = false;
 

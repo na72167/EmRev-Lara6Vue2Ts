@@ -47,6 +47,7 @@ export default class Hero extends Vue {
   get checkAuthComponents() {
     return toolStoreModule.getAuthComponentsState;
   }
+
 }
 </script>
 

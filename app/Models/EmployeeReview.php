@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Models;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -11,7 +11,7 @@ class EmployeeReview extends Model
         'enrollment_period', 'enrollment_status', 'employment_status', 'welfare_office_environment',
         'working_hours', 'holiday', 'in_company_system', 'corporate_culture', 'ease_of_work_for_women',
         'rewarding_work', 'image_gap', 'business_outlook', 'strengths_and_weaknesses', 'annual_income_salary',
-        'general_comment_title', 'general_comment', 'username', 'like_count', 'delete_flg', 'created_at', 'updated_at'
+        'general_comment_title', 'general_comment', 'username', 'like_count', 'deleted_at', 'created_at', 'updated_at'
     ];
 
     protected $table = 'EmployeeReviews';

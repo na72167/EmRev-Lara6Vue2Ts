@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http\Models;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
 class ReportCategory extends Model
 {
     protected $fillable = [
-        'id', 'name', 'delete_flg', 'created_at', 'updated_at'
+        'id', 'name', 'deleted_at', 'created_at', 'updated_at'
     ];
 }

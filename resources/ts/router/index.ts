@@ -4,6 +4,7 @@ import Home from '@/views/home/Index.vue'
 import MyPage from '@/views/myPage/Index.vue'
 import ApplyCompany from '@/views/applyCompany/Index.vue'
 import SelectReviewCompany from '@/views/postingReview/selectReviewCompany/Index.vue'
+import ReviewRegisterForm from '@/views/postingReview/postingReview/Index.vue'
 
 Vue.use(VueRouter);
 
@@ -24,9 +25,14 @@ const routes: Array<RouteConfig> = [
     component: ApplyCompany
   },
   {
-    path: '/SelectReviewCompany',
-    name: 'SelectReviewCompany',
+    path: '/selectReviewCompany',
+    name: 'selectReviewCompany',
     component: SelectReviewCompany
+  },
+  {
+    path: '/reviewRegisterForm/:company_id',
+    name: 'ReviewRegisterForm',
+    component: ReviewRegisterForm
   },
 ]
 

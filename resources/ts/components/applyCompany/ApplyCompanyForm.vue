@@ -127,9 +127,12 @@ import { APPLYCOMPANY_NUM,APPLY_COMPANY_BUTTON,CompanyNameFormErrMsg,IndustryErr
 YearOfEstablishmentErrMsg,ListedYearErrMsg,NumberOfEmployeesErrMsg,RepresentativeErrMsg,
 AverageAnnualIncomeErrMsg,AverageAgeErrMsg,LocationErrMsg,CommonErrMsg } from '@/utils/setting-applyCompany';
 import { validHalfNumAlp,validMaxLen,validMinLen } from '@/utils/validate';
+import { toolStoreModule } from '@/store/modules/tool';
 
 @Component
 export default class ApplyCompanyForm extends Vue {
+
+  //TODO:型部分の修正
   // フォーム情報の保持
   public companyName: any = null;
   public representative: any = null;
@@ -409,7 +412,7 @@ export default class ApplyCompanyForm extends Vue {
           this.isSubmit = true;
           // this.signUpButton = SIGNUP_BUTTON.REGISTERING_BUTTON;
           // TODO:ロード画面実装
-          // this.$store.dispatch("tool/setLoading");
+          toolStoreModule.setLoading();
           console.log("会社情報登録処理に入りました。");
 
           //バリテーション結果の初期化
@@ -439,7 +442,7 @@ export default class ApplyCompanyForm extends Vue {
 
           this.submitButton = APPLY_COMPANY_BUTTON.REGISTER_BUTTON;
           this.isSubmit = false;
-          // this.$store.dispatch("tool/clearLoading");
+          toolStoreModule.clearLoading();
 
           this.$router.push(`/MyPage/${Cookies.get('user_id')}`)
 

@@ -23,12 +23,13 @@ import Cookies from "js-cookie";
 
 class ToolStore extends VuexModule {
 
-  private loading: boolean = false
+  public loading : boolean = false;
   private aboutMenuState: OpenAboutMenu = false
   public authComponentsState: SignUpOrLogin = 'signUp'
   public loginUser: any = null;
+  public progressPostingReviewState: any = sessionStorage.getItem('progressPostingReviewState');
 
-  get isLoading(): boolean {
+  get isLording(): boolean{
     return this.loading;
   }
 
@@ -40,9 +41,13 @@ class ToolStore extends VuexModule {
     return this.authComponentsState
   }
 
+  get getProgressPostingReviewState(): any{
+    return this.progressPostingReviewState
+  }
+
   @Mutation
   private SET_LOADING(): void{
-    this.loading = true;
+    this.loading = true
   }
 
   @Mutation
@@ -65,9 +70,20 @@ class ToolStore extends VuexModule {
     this.authComponentsState = val;
   }
 
+  @Mutation
+  private SET_PROGRESS_POSTING_REVIEWSTATE(val: any): void{
+    sessionStorage.setItem('progressPostingReviewState',val);
+    this.progressPostingReviewState = sessionStorage.getItem('progressPostingReviewState');
+  }
+
   @Action
   public setLoading(): void {
-    this.SET_LOADING();
+    this.SET_LOADING()
+  }
+
+  @Action
+  public clearLoading(): void {
+    this.CLEAR_LOADING()
   }
 
   @Action
@@ -88,6 +104,11 @@ class ToolStore extends VuexModule {
   @Action
   public changeLoginComponents(val: SignUpOrLogin): void{
     this.SET_CHANGE_LOGIN_COMPONENTS(val);
+  }
+
+  @Action
+  public setProgressPostingReviewState(val: any): void{
+    this.SET_PROGRESS_POSTING_REVIEWSTATE(val);
   }
 
 }
