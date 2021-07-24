@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Http\Models;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
 class ReviewLike extends Model
 {
     protected $fillable = [
-        'id', 'user_id', 'favorite_recode', 'delete_flg', 'created_at', 'updated_at'
+        'id', 'user_id', 'favorite_recode', 'deleted_at', 'created_at', 'updated_at'
     ];
 
     protected $table = 'ReviewLikes';

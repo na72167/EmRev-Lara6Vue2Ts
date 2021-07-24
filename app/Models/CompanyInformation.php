@@ -31,7 +31,7 @@ class CompanyInformation extends Model
         'average_annual_income', //平均年収
         'average_age', //平均年齢
         'number_of_reviews', //総レビュー数
-        'delete_flg', //削除フラグ
+        'deleted_at', //削除フラグ
         'created_at', //生成日時
         'updated_at' //最終更新日時
     ];

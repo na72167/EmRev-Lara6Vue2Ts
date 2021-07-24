@@ -12,13 +12,13 @@ const mix = require('laravel-mix');
 */
 
 mix.webpackConfig({
-resolve: {
+  resolve: {
     extensions: ['.ts','.js', '.vue', '.json'],
     alias: {
     'vue$': 'vue/dist/vue.esm.js',
     '@': __dirname + '/resources/ts'
     }
-},
+  },
 })
 .ts('resources/ts/app.ts', 'public/js/app.js')
-.sass('resources/sass/app.scss', 'public/css');
+.sass('resources/ts/style/index.scss', 'public/css');

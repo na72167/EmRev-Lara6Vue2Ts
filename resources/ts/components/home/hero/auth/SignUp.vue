@@ -62,6 +62,7 @@ import Cookies from "js-cookie"
 import { EmailFormErrMsg,PasswordFormErrMsg,CommonErrMsg } from '@/utils/auth';
 import { SIGNUP_NUM } from '@/utils/auth-mapping';
 import { validEmail,validHalfNumAlp,validMaxLen,validMinLen,validEmailDup } from '@/utils/validate';
+import { toolStoreModule } from '@/store/modules/tool';
 
 @Component
 export default class SignUp extends Vue {
@@ -176,7 +177,7 @@ export default class SignUp extends Vue {
         this.isSubmit = true;
         this.signUpButton = '登録中・・・';
         // TODO:ロード画面実装
-        // this.$store.dispatch("app/setLoading");
+        toolStoreModule.setLoading();
         console.log("登録処理に入りました。");
 
         const signUpParams = {
@@ -191,11 +192,10 @@ export default class SignUp extends Vue {
         Cookies.set('email', registUser.data.email);
         Cookies.set('roll', registUser.data.roll);
 
-        // this.$store.dispatch("users/setLoginUserInfo");
+        toolStoreModule.clearLoading();
         this.signUpButton = "登録する";
         this.isSubmit = false;
 
-        // マイページへ飛ばすパスを書く。
         this.$router.push(`/myPage/${Cookies.get('user_id')}`)
       } catch (e) {
         console.log("登録処理中に例外エラーが発生しました。");

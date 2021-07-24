@@ -18,7 +18,6 @@
 import { Component,Prop,Vue } from 'vue-property-decorator';
 
 @Component
-
 export default class Intro extends Vue {
   // Vue + TypeScriptでpropsのObjectやArrayに型をつける
   // https://qiita.com/iMasanari/items/31d8a26c7ee22793585c
