@@ -79,6 +79,7 @@
             </div>
             <input class="revRegistJr-content__input" :class="{ errInput: workingHoursErrMsg }" placeholder="勤務時間" v-model="workingHours">
           </div>
+
         </div>
 
         <!-- TODO:切り分けるかも -->
@@ -141,6 +142,23 @@ export default class ReviewRegisterJr extends Vue {
     sessionStorage.removeItem('welfare_office_environment');
     sessionStorage.removeItem('working_hours');
 
+    sessionStorage.removeItem('inCompany_system');
+    sessionStorage.removeItem('corporate_culture');
+    sessionStorage.removeItem('holiday');
+    sessionStorage.removeItem('organizational_structure');
+    sessionStorage.removeItem('ease_of_work_for_women');
+
+    sessionStorage.removeItem('image_gap');
+    sessionStorage.removeItem('rewarding_work');
+    sessionStorage.removeItem('strengths_and_weaknesses');
+    sessionStorage.removeItem('annual_income_salary');
+    sessionStorage.removeItem('business_outlook');
+
+    sessionStorage.removeItem('general_estimation_title');
+    sessionStorage.removeItem('general_estimation');
+
+    sessionStorage.setItem('changeComponentsStates','JoiningRoute');
+    this.changeformcomponents();
     //webstrageの削除処理
     this.$router.push('/selectReviewCompany')
   }
@@ -151,169 +169,212 @@ export default class ReviewRegisterJr extends Vue {
     if (!this.joiningRoute) {
       this.commonErrMsg = null,
       this.joiningRoute = null,
+      this.joiningRouteErrMsg = null,
       //未入力チェック
       console.log("入社経路欄が未入力です。");
       this.joiningRouteErrMsg = "入社経路欄が未入力です。";
     } else if(!validHalfNumAlp(this.joiningRoute)){
       this.commonErrMsg = null,
       this.joiningRoute = null,
+      this.joiningRouteErrMsg = null;
       // 半角英数時チェック
       console.log("入社経路は半角英数字で入力してください");
       this.joiningRouteErrMsg = "入社経路は半角英数字で入力してください";
     } else {
       //バリテーションがOKな場合
       console.log("入社経路欄のバリテーションOKです");
+      this.joiningRouteErrMsg = null;
       this.commonErrMsg = null
+      sessionStorage.setItem('joining_route',this.joiningRoute);
     }
 
     //在籍状況欄
     if (!this.enrollmentStatus) {
       this.commonErrMsg = null,
       this.enrollmentStatus = null,
+      this.enrollmentStatusErrMsg = null,
       //未入力チェック
       console.log("在籍状況欄が未入力です。");
       this.enrollmentStatusErrMsg = "在籍状況欄が未入力です。";
     } else if(!validHalfNumAlp(this.enrollmentStatus)){
       this.commonErrMsg = null,
       this.enrollmentStatus = null,
+      this.enrollmentStatusErrMsg = null,
       // 半角英数時チェック
       console.log("在籍状況欄は半角英数字で入力してください");
       this.enrollmentStatusErrMsg = "在籍状況欄は半角英数字で入力してください";
     } else {
       //バリテーションがOKな場合
       console.log("在籍状況欄のバリテーションOKです");
-      this.commonErrMsg = null
+      this.enrollmentStatusErrMsg = null;
+      this.commonErrMsg = null;
+      sessionStorage.setItem('enrollment_status',this.enrollmentStatus);
     }
 
     //在籍時の職種欄
     if (!this.occupation) {
       this.commonErrMsg = null,
       this.occupation = null,
+      this.occupationErrMsg = null,
       //未入力チェック
       console.log("在籍時の職種欄が未入力です。");
       this.occupationErrMsg = "在籍時の職種欄が未入力です。";
     } else if(!validHalfNumAlp(this.occupation)){
       this.commonErrMsg = null,
       this.occupation = null,
+      this.occupationErrMsg = null,
       // 半角英数時チェック
       console.log("在籍時の職種欄は半角英数字で入力してください");
       this.occupationErrMsg = "在籍時の職種欄は半角英数字で入力してください";
     } else {
       //バリテーションがOKな場合
       console.log("在籍時の職種欄のバリテーションOKです");
-      this.commonErrMsg = null
+      this.occupationErrMsg = null;
+      this.commonErrMsg = null;
+      sessionStorage.setItem('occupation',this.occupation);
     }
 
     //在籍時の役職欄
     if (!this.position) {
       this.commonErrMsg = null,
       this.position = null,
+      this.commonErrMsg = null,
       //未入力チェック
       console.log("在籍時の役職欄が未入力です。");
       this.positionErrMsg = "在籍時の役職欄が未入力です。";
     } else if(!validHalfNumAlp(this.position)){
       this.commonErrMsg = null,
       this.position = null,
+      this.positionErrMsg = null,
       // 半角英数時チェック
       console.log("在籍時の役職欄は半角英数字で入力してください");
       this.positionErrMsg = "在籍時の役職欄は半角英数字で入力してください";
     } else {
       //バリテーションがOKな場合
       console.log("在籍時の役職欄のバリテーションOKです");
-      this.commonErrMsg = null
+      this.positionErrMsg = null;
+      this.commonErrMsg = null;
+      sessionStorage.setItem('position',this.position);
     }
 
     //在籍期間欄
     if (!this.enrollmentPeriod) {
       this.commonErrMsg = null,
       this.enrollmentPeriod = null,
+      this.enrollmentPeriodErrMsg = null,
       //未入力チェック
       console.log("在籍期間欄が未入力です。");
       this.enrollmentPeriodErrMsg = "在籍期間欄が未入力です。";
     } else if(!validHalfNumAlp(this.enrollmentPeriod)){
       this.commonErrMsg = null,
       this.enrollmentPeriod = null,
+      this.enrollmentPeriodErrMsg = null;
       // 半角英数時チェック
       console.log("在籍期間欄は半角英数字で入力してください");
       this.enrollmentPeriodErrMsg = "在籍期間欄は半角英数字で入力してください";
     } else {
       //バリテーションがOKな場合
       console.log("在籍期間欄のバリテーションOKです");
+      this.enrollmentPeriodErrMsg = null;
       this.commonErrMsg = null
+      sessionStorage.setItem('enrollment_period',this.enrollmentPeriod);
     }
 
     //在籍形態欄
     if (!this.employmentStatus) {
       this.commonErrMsg = null,
       this.employmentStatus = null,
+      this.employmentStatusErrMsg = null,
       //未入力チェック
       console.log("在籍形態欄が未入力です。");
       this.employmentStatusErrMsg = "在籍形態欄が未入力です。";
     } else if(!validHalfNumAlp(this.employmentStatus)){
       this.commonErrMsg = null,
       this.employmentStatus = null,
+      this.employmentStatusErrMsg = null,
       // 半角英数時チェック
       console.log("在籍形態欄は半角英数字で入力してください");
       this.employmentStatusErrMsg = "在籍形態欄は半角英数字で入力してください";
     } else {
       //バリテーションがOKな場合
       console.log("在籍形態欄のバリテーションOKです");
-      this.commonErrMsg = null
+      this.commonErrMsg = null;
+      this.employmentStatusErrMsg = null;
+      sessionStorage.setItem('employment_status',this.employmentStatus);
     }
 
     //福利厚生欄
     if (!this.welfareOfficeEnvironment) {
       this.commonErrMsg = null,
       this.welfareOfficeEnvironment = null,
+      this.welfareOfficeEnvironmentErrMsg = null,
       //未入力チェック
       console.log("福利厚生欄が未入力です。");
       this.welfareOfficeEnvironmentErrMsg = "福利厚生欄が未入力です。";
     } else if(!validHalfNumAlp(this.welfareOfficeEnvironment)){
       this.commonErrMsg = null,
       this.welfareOfficeEnvironment = null,
+      this.welfareOfficeEnvironmentErrMsg = null,
       // 半角英数時チェック
       console.log("福利厚生は半角英数字で入力してください");
       this.welfareOfficeEnvironmentErrMsg = "福利厚生は半角英数字で入力してください";
     } else {
       //バリテーションがOKな場合
       console.log("福利厚生のバリテーションOKです");
-      this.commonErrMsg = null
+      this.welfareOfficeEnvironmentErrMsg = null;
+      this.commonErrMsg = null;
+      sessionStorage.setItem('welfare_office_environment',this.welfareOfficeEnvironment);
     }
 
     //勤務時間
     if (!this.workingHours) {
       this.commonErrMsg = null,
       this.workingHours = null,
+      this.workingHoursErrMsg = null,
       //未入力チェック
       console.log("勤務時間欄が未入力です。");
       this.workingHoursErrMsg = "勤務時間欄が未入力です。";
     } else if(!validHalfNumAlp(this.workingHours)){
       this.commonErrMsg = null,
       this.workingHours = null,
+      this.workingHoursErrMsg = null,
       // 半角英数時チェック
       console.log("半角英数時チェックは半角英数字で入力してください");
       this.workingHoursErrMsg = "半角英数時チェックは半角英数字で入力してください";
     } else {
       //バリテーションがOKな場合
       console.log("半角英数時チェックのバリテーションOKです");
-      this.commonErrMsg = null
+      this.workingHoursErrMsg = null;
+      this.commonErrMsg = null;
+      sessionStorage.setItem('working_hours',this.workingHours);
     }
 
     // TODO:配列の型周りでエラーが出てしまうので今のところはsetItemの引数を個別指定している。
     // https://typescript-jp.gitbook.io/deep-dive/type-system/types
 
-    sessionStorage.setItem('joining_route',this.joiningRoute);
-    sessionStorage.setItem('enrollment_status',this.enrollmentStatus);
-    sessionStorage.setItem('occupation',this.occupation);
-    sessionStorage.setItem('position',this.position);
-    sessionStorage.setItem('enrollment_period',this.enrollmentPeriod);
-    sessionStorage.setItem('employment_status',this.employmentStatus);
-    sessionStorage.setItem('welfare_office_environment',this.welfareOfficeEnvironment);
-    sessionStorage.setItem('working_hours',this.workingHours);
+    if(this.joiningRouteErrMsg === null && this.enrollmentStatusErrMsg === null &&
+      this.occupationErrMsg === null && this.positionErrMsg === null &&
+      this.enrollmentPeriodErrMsg === null && this.employmentStatusErrMsg === null &&
+      this.welfareOfficeEnvironmentErrMsg === null && this.workingHoursErrMsg === null){
+      sessionStorage.setItem('changeComponentsStates','InternalSystemsAndCorporateCulture');
+      this.changeformcomponents();
+    }
 
-    sessionStorage.setItem('changeComponentsStates','InternalSystemsAndCorporateCulture');
-    this.changeformcomponents();
+  }
 
+  public fetchData(){
+    this.joiningRoute = sessionStorage.getItem('joining_route');
+    this.enrollmentStatus = sessionStorage.getItem('enrollment_status');
+    this.occupation = sessionStorage.getItem('occupation');
+    this.position = sessionStorage.getItem('position');
+    this.enrollmentPeriod = sessionStorage.getItem('enrollment_period');
+    this.employmentStatus = sessionStorage.getItem('employment_status');
+    this.welfareOfficeEnvironment = sessionStorage.getItem('welfare_office_environment');
+    this.workingHours = sessionStorage.getItem('working_hours');
+  }
+
+  public created(){
+    this.fetchData();
   }
 }
 </script>

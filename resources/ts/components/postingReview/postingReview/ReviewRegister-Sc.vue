@@ -14,3 +14,5 @@ import { Component, Vue } from 'vue-property-decorator';
 export default class ReviewRegisterSc extends Vue {
 }
 </script>
+<style lang="scss" scope>
+</style>
