@@ -444,7 +444,7 @@ export default class ApplyCompanyForm extends Vue {
           this.isSubmit = false;
           toolStoreModule.clearLoading();
 
-          this.$router.push(`/MyPage/${Cookies.get('user_id')}`)
+          this.$router.push(`/MyPage/${Cookies.get('user_id')}`);
 
         } catch (e) {
           console.log("登録処理中に例外エラーが発生しました。");

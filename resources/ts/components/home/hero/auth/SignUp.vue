@@ -194,7 +194,8 @@ export default class SignUp extends Vue {
         this.signUpButton = "登録する";
         this.isSubmit = false;
 
-        this.$router.push(`/myPage/${Cookies.get('user_id')}`)
+        this.$router.push(`/myPage/${Cookies.get('user_id')}`);
+
       } catch (e) {
         console.log("登録処理中に例外エラーが発生しました。");
         this.commonErrMsg = CommonErrMsg.commonErrMsg;
