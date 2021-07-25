@@ -24,6 +24,10 @@ export default class ReviewRegisterGc extends Vue {
     const resultWithdrawal = await axios.post('/api/withdrawal',user_id);
     console.dir(resultWithdrawal);
 
+    Cookies.remove('user_id');
+    Cookies.remove('email');
+    Cookies.remove('roll');
+
     //TODO:フラッシュメッセージで「退会しました」と表示する。
     this.$router.push('/');
   }
