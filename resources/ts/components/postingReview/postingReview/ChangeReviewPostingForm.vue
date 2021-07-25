@@ -71,6 +71,7 @@ export default class ChangeReviewPostingForm extends Vue {
   // TODO:画面移動をした際にwebストレージを破棄させる処理を走らせる。
   public created(){
     this.initializing = true;
+    this.changeFormComponent = sessionStorage.getItem('changeComponentsStates');
     toolStoreModule.setProgressPostingReviewState(sessionStorage.getItem('progressPostingReviewState'));
     this.initializing = false;
   }
