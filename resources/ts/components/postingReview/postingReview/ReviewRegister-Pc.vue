@@ -532,7 +532,7 @@ export default class ReviewRegisterPc extends Vue {
     if (!this.organizationalStructure) {
       this.commonErrMsg = null,
       this.organizationalStructure = null,
-      this.organizationalStructure = null,
+      this.organizationalStructureErrMsg = null,
       //未入力チェック
       console.log("組織体制欄が未入力です。");
       this.organizationalStructureErrMsg = "組織体制欄が未入力です。";
@@ -546,7 +546,7 @@ export default class ReviewRegisterPc extends Vue {
       //バリテーションがOKな場合
       console.log("組織体制欄のバリテーションOKです");
       this.commonErrMsg = null,
-      this.organizationalStructure = null,
+      this.organizationalStructureErrMsg = null,
       sessionStorage.setItem('organizational_structure',this.organizationalStructure);
     }
 
@@ -554,7 +554,7 @@ export default class ReviewRegisterPc extends Vue {
     if (!this.easeOfWorkForWomen) {
       this.commonErrMsg = null,
       this.easeOfWorkForWomen = null,
-      this.easeOfWorkForWomen = null,
+      this.easeOfWorkForWomenErrMsg = null,
       //未入力チェック
       console.log("女性の働きやすさについての欄が未入力です。");
       this.easeOfWorkForWomenErrMsg = "女性の働きやすさについての欄が未入力です。";
@@ -568,7 +568,7 @@ export default class ReviewRegisterPc extends Vue {
       //バリテーションがOKな場合
       console.log("女性の働きやすさについての欄のバリテーションOKです");
       this.commonErrMsg = null
-      this.easeOfWorkForWomen = null,
+      this.easeOfWorkForWomenErrMsg = null,
       sessionStorage.setItem('ease_of_work_for_women',this.easeOfWorkForWomen);
     }
 
@@ -774,7 +774,7 @@ export default class ReviewRegisterPc extends Vue {
           general_estimation: sessionStorage.getItem('general_estimation'),
         }
 
-        const registPostingReview = await axios.post('/api/register',param);
+        const registPostingReview = await axios.post('/api/registPostingReview',param);
         console.dir(registPostingReview);
         toolStoreModule.clearLoading();
 

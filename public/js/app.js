@@ -5343,28 +5343,27 @@ var AboutMenu = /** @class */ (function (_super) {
     Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__extends"])(AboutMenu, _super);
     function AboutMenu() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
+        _this.user_id = null;
         _this.email = null;
         _this.commonErrMsg = null;
         return _this;
     }
-    AboutMenu.prototype.created = function () {
-        this.email = js_cookie__WEBPACK_IMPORTED_MODULE_3___default.a.get('email');
-    };
     AboutMenu.prototype.cancel = function () {
         this.$router.push("/MyPage/" + js_cookie__WEBPACK_IMPORTED_MODULE_3___default.a.get('user_id'));
     };
     AboutMenu.prototype.registe = function () {
         return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, function () {
-            var email, employeeRegistration, e_1;
+            var param, employeeRegistration, e_1;
             return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__generator"])(this, function (_a) {
                 switch (_a.label) {
                     case 0:
                         _a.trys.push([0, 2, , 3]);
-                        email = {
+                        param = {
+                            user_id: this.user_id,
                             email: this.email
                         };
                         _store_modules_tool__WEBPACK_IMPORTED_MODULE_5__["toolStoreModule"].setLoading();
-                        return [4 /*yield*/, axios__WEBPACK_IMPORTED_MODULE_2___default.a.post('/api/contributorRegistration', email)];
+                        return [4 /*yield*/, axios__WEBPACK_IMPORTED_MODULE_2___default.a.post('/api/contributorRegistration', param)];
                     case 1:
                         employeeRegistration = _a.sent();
                         console.dir(employeeRegistration);
@@ -5381,6 +5380,16 @@ var AboutMenu = /** @class */ (function (_super) {
             });
         });
     };
+    AboutMenu.prototype.fetchdata = function () {
+        this.user_id = js_cookie__WEBPACK_IMPORTED_MODULE_3___default.a.get('user_id');
+        this.email = js_cookie__WEBPACK_IMPORTED_MODULE_3___default.a.get('email');
+    };
+    AboutMenu.prototype.created = function () {
+        this.fetchdata();
+    };
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
+        Object(vue_property_decorator__WEBPACK_IMPORTED_MODULE_1__["Watch"])('$route')
+    ], AboutMenu.prototype, "fetchdata", null);
     AboutMenu = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
         vue_property_decorator__WEBPACK_IMPORTED_MODULE_1__["Component"]
     ], AboutMenu);
@@ -5631,12 +5640,19 @@ var ChangeReviewPostingForm = /** @class */ (function (_super) {
         this.initializing = false;
     };
     // TODO:画面移動をした際にwebストレージを破棄させる処理を走らせる。
-    ChangeReviewPostingForm.prototype.created = function () {
-        this.initializing = true;
+    //ルートの変更を感知するたびにfetchを発火させる。
+    ChangeReviewPostingForm.prototype.fetchData = function () {
         this.changeFormComponent = sessionStorage.getItem('changeComponentsStates');
         _store_modules_tool__WEBPACK_IMPORTED_MODULE_8__["toolStoreModule"].setProgressPostingReviewState(sessionStorage.getItem('progressPostingReviewState'));
+    };
+    ChangeReviewPostingForm.prototype.created = function () {
+        this.initializing = true;
+        this.fetchData();
         this.initializing = false;
     };
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
+        Object(vue_property_decorator__WEBPACK_IMPORTED_MODULE_1__["Watch"])('$route')
+    ], ChangeReviewPostingForm.prototype, "fetchData", null);
     ChangeReviewPostingForm = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
         Object(vue_property_decorator__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             components: {
@@ -6796,7 +6812,7 @@ var ReviewRegisterPc = /** @class */ (function (_super) {
                         if (!this.organizationalStructure) {
                             this.commonErrMsg = null,
                                 this.organizationalStructure = null,
-                                this.organizationalStructure = null,
+                                this.organizationalStructureErrMsg = null,
                                 //未入力チェック
                                 console.log("組織体制欄が未入力です。");
                             this.organizationalStructureErrMsg = "組織体制欄が未入力です。";
@@ -6812,14 +6828,14 @@ var ReviewRegisterPc = /** @class */ (function (_super) {
                             //バリテーションがOKな場合
                             console.log("組織体制欄のバリテーションOKです");
                             this.commonErrMsg = null,
-                                this.organizationalStructure = null,
+                                this.organizationalStructureErrMsg = null,
                                 sessionStorage.setItem('organizational_structure', this.organizationalStructure);
                         }
                         //女性の働きやすさについて
                         if (!this.easeOfWorkForWomen) {
                             this.commonErrMsg = null,
                                 this.easeOfWorkForWomen = null,
-                                this.easeOfWorkForWomen = null,
+                                this.easeOfWorkForWomenErrMsg = null,
                                 //未入力チェック
                                 console.log("女性の働きやすさについての欄が未入力です。");
                             this.easeOfWorkForWomenErrMsg = "女性の働きやすさについての欄が未入力です。";
@@ -6835,7 +6851,7 @@ var ReviewRegisterPc = /** @class */ (function (_super) {
                             //バリテーションがOKな場合
                             console.log("女性の働きやすさについての欄のバリテーションOKです");
                             this.commonErrMsg = null;
-                            this.easeOfWorkForWomen = null,
+                            this.easeOfWorkForWomenErrMsg = null,
                                 sessionStorage.setItem('ease_of_work_for_women', this.easeOfWorkForWomen);
                         }
                         //入社前とのギャップ
@@ -7043,7 +7059,7 @@ var ReviewRegisterPc = /** @class */ (function (_super) {
                             general_estimation_title: sessionStorage.getItem('general_estimation_title'),
                             general_estimation: sessionStorage.getItem('general_estimation'),
                         };
-                        return [4 /*yield*/, axios__WEBPACK_IMPORTED_MODULE_2___default.a.post('/api/register', param)];
+                        return [4 /*yield*/, axios__WEBPACK_IMPORTED_MODULE_2___default.a.post('/api/registPostingReview', param)];
                     case 2:
                         registPostingReview = _a.sent();
                         console.dir(registPostingReview);
