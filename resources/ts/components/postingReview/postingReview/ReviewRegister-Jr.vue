@@ -5,7 +5,6 @@
       <h1 class="revRegistJr-content__sub">入社経路や在籍状況について</h1>
 
       <form class="revRegistJr-content__form">
-
         <div class="revRegistJr-content__input-wrap">
 
           <div>
@@ -376,6 +375,8 @@ export default class ReviewRegisterJr extends Vue {
   public created(){
     this.fetchData();
   }
+
+
 }
 </script>
 

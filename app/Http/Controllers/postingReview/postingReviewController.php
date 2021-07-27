@@ -19,6 +19,8 @@ class postingReviewController extends Controller
     Log::debug("リクエスト内容".$request);
 
     $RegistPostingReviewResults = EmployeeReview::create([
+      'employee_id' => $request['user_id'],
+      'review_company_id' => $request['company_id'],
       'joining_route' => $request['joining_route'],
       'enrollment_status' => $request['enrollment_status'],
       'occupation' => $request['occupation'],
