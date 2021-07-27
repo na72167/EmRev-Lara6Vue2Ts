@@ -212,6 +212,7 @@
 <script lang="ts" scoped>
 import { Component,Emit,Vue } from 'vue-property-decorator';
 import axios from "axios";
+import Cookies from "js-cookie"
 import { validHalfNumAlp,validMaxLen,validMinLen } from '@/utils/validate';
 import { toolStoreModule } from '@/store/modules/tool';
 
@@ -241,6 +242,8 @@ export default class ReviewRegisterPc extends Vue {
 
   public generalEstimationTitle :any = null;
   public generalEstimation :any = null;
+
+  public user_id :any = null;
 
 
   public joiningRouteErrMsg:any = null;
@@ -772,7 +775,12 @@ export default class ReviewRegisterPc extends Vue {
 
           general_estimation_title: sessionStorage.getItem('general_estimation_title'),
           general_estimation: sessionStorage.getItem('general_estimation'),
+
+          user_id: this.user_id,
+          company_id: this.$route.query.company_id,
         }
+
+        console.log(param);
 
         const registPostingReview = await axios.post('/api/registPostingReview',param);
         console.dir(registPostingReview);
@@ -810,6 +818,8 @@ export default class ReviewRegisterPc extends Vue {
     this.businessOutlook = sessionStorage.getItem('business_outlook');
     this.generalEstimationTitle = sessionStorage.getItem('general_estimation_title');
     this.generalEstimation = sessionStorage.getItem('general_estimation');
+
+    this.user_id = Cookies.get('user_id');
   }
 
   public created(){
@@ -817,6 +827,7 @@ export default class ReviewRegisterPc extends Vue {
   }
 }
 </script>
+
 <style lang="scss" scope>
   .revRegistPc-content{
   height: 2780px;

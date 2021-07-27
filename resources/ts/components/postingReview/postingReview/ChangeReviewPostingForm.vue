@@ -38,6 +38,7 @@
 
 <script lang="ts" scoped>
 import { Component,Watch,Vue } from 'vue-property-decorator';
+import VueRouter from "vue-router";
 import ReviewRegisterJr from '@/components/postingReview/postingReview/ReviewRegister-Jr'
 import ReviewRegisterIc from '@/components/postingReview/postingReview/ReviewRegister-Ic'
 import ReviewRegisterGj from '@/components/postingReview/postingReview/ReviewRegister-Gj'
@@ -45,6 +46,13 @@ import ReviewRegisterGc from '@/components/postingReview/postingReview/ReviewReg
 import ReviewRegisterPc from '@/components/postingReview/postingReview/ReviewRegister-Pc'
 import ReviewRegisterSc from '@/components/postingReview/postingReview/ReviewRegister-Sc'
 import { toolStoreModule } from '@/store/modules/tool';
+
+// [typescript, vue.js]データを取得してからコンポーネントを描画をする
+// https://nrslib.com/vuejs_beforerouteenter/
+
+// Component.registerHooks([
+//   'beforeRouteEnter'
+// ])
 
 @Component({
   components: {
@@ -71,16 +79,23 @@ export default class ChangeReviewPostingForm extends Vue {
   // TODO:画面移動をした際にwebストレージを破棄させる処理を走らせる。
   //ルートの変更を感知するたびにfetchを発火させる。
 
-  @Watch('$route')
-  public fetchData(){
-    this.changeFormComponent = sessionStorage.getItem('changeComponentsStates');
-    toolStoreModule.setProgressPostingReviewState(sessionStorage.getItem('progressPostingReviewState'));
-  }
+  // TODO:画面遷移の検知が出来ていない
+  // @Watch('$route', {deep: true , immediate: true})
+  // public fetchData(){
+  //   this.initializing = true;
+  //   this.changeFormComponent = sessionStorage.getItem('changeComponentsStates');
+  //   toolStoreModule.setProgressPostingReviewState(sessionStorage.getItem('progressPostingReviewState'));
+  //   this.initializing = false;
+  // }
 
-  public created(){
-    this.initializing = true;
-    this.fetchData();
-    this.initializing = false;
-  }
+  // beforeRouteEnter(to: VueRouter, from: VueRouter){
+  //   if (to !== from) {
+  //     this.initializing = true;
+  //     this.changeFormComponent = sessionStorage.getItem('changeComponentsStates');
+  //     toolStoreModule.setProgressPostingReviewState(sessionStorage.getItem('progressPostingReviewState'));
+  //     this.initializing = false;
+  //   }
+  // }
+
 }
 </script>

@@ -2222,6 +2222,25 @@ exports.push([module.i, ".revRegistPc-content {\n  height: 2780px;\n  width: 100
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/ts/components/postingReview/postingReview/ReviewRegister-Sc.vue?vue&type=style&index=0&lang=scss&scope=true&":
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--8-2!./node_modules/sass-loader/dist/cjs.js??ref--8-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/ts/components/postingReview/postingReview/ReviewRegister-Sc.vue?vue&type=style&index=0&lang=scss&scope=true& ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".revRegistCm-content {\n  height: 630px;\n  width: 100%;\n  background-color: #fff;\n}\n.revRegistCm-content__wrap {\n  max-width: 1000px;\n  margin: 30px auto;\n}\n.revRegistCm-content__form-element {\n  height: 230px;\n  width: 630px;\n  margin-left: 70px;\n  float: left;\n  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);\n  border-radius: 10px;\n}\n.revRegistCm-content__form-wrap {\n  width: 500px;\n  margin: 40px auto;\n}\n.revRegistCm-content__title {\n  font-size: 2rem;\n  text-align: center;\n}\n.revRegistCm-content__sub {\n  text-align: center;\n  margin-bottom: 40px;\n}\n.revRegistCm-content__bottom-wrap {\n  width: 500px;\n  margin: 50px auto 0px;\n  text-align: center;\n}\n.revRegistCm-content__bottom-link {\n  text-decoration: none;\n}\n.revRegistCm-content__bottom-next {\n  padding: 10px 47px;\n  margin-left: 15px;\n  background-color: #06D1EC;\n  color: #fff;\n  border: none;\n  border: 1px solid #fff;\n}", ""]);
+
+// exports
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/ts/components/withdrawal/withdrawal.vue?vue&type=style&index=0&lang=scss&scope=true&":
 /*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--8-2!./node_modules/sass-loader/dist/cjs.js??ref--8-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/ts/components/withdrawal/withdrawal.vue?vue&type=style&index=0&lang=scss&scope=true& ***!
@@ -3502,6 +3521,36 @@ if(false) {}
 
 
 var content = __webpack_require__(/*! !../../../../../node_modules/css-loader!../../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../../node_modules/postcss-loader/src??ref--8-2!../../../../../node_modules/sass-loader/dist/cjs.js??ref--8-3!../../../../../node_modules/vue-loader/lib??vue-loader-options!./ReviewRegister-Pc.vue?vue&type=style&index=0&lang=scss&scope=true& */ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/ts/components/postingReview/postingReview/ReviewRegister-Pc.vue?vue&type=style&index=0&lang=scss&scope=true&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/ts/components/postingReview/postingReview/ReviewRegister-Sc.vue?vue&type=style&index=0&lang=scss&scope=true&":
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--8-2!./node_modules/sass-loader/dist/cjs.js??ref--8-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/ts/components/postingReview/postingReview/ReviewRegister-Sc.vue?vue&type=style&index=0&lang=scss&scope=true& ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../../node_modules/css-loader!../../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../../node_modules/postcss-loader/src??ref--8-2!../../../../../node_modules/sass-loader/dist/cjs.js??ref--8-3!../../../../../node_modules/vue-loader/lib??vue-loader-options!./ReviewRegister-Sc.vue?vue&type=style&index=0&lang=scss&scope=true& */ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/ts/components/postingReview/postingReview/ReviewRegister-Sc.vue?vue&type=style&index=0&lang=scss&scope=true&");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -5625,6 +5674,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+// [typescript, vue.js]データを取得してからコンポーネントを描画をする
+// https://nrslib.com/vuejs_beforerouteenter/
+// Component.registerHooks([
+//   'beforeRouteEnter'
+// ])
 var ChangeReviewPostingForm = /** @class */ (function (_super) {
     Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__extends"])(ChangeReviewPostingForm, _super);
     function ChangeReviewPostingForm() {
@@ -5632,6 +5686,24 @@ var ChangeReviewPostingForm = /** @class */ (function (_super) {
         _this.initializing = false;
         _this.changeFormComponent = sessionStorage.getItem('changeComponentsStates');
         return _this;
+        // TODO:画面移動をした際にwebストレージを破棄させる処理を走らせる。
+        //ルートの変更を感知するたびにfetchを発火させる。
+        // TODO:画面遷移の検知が出来ていない
+        // @Watch('$route', {deep: true , immediate: true})
+        // public fetchData(){
+        //   this.initializing = true;
+        //   this.changeFormComponent = sessionStorage.getItem('changeComponentsStates');
+        //   toolStoreModule.setProgressPostingReviewState(sessionStorage.getItem('progressPostingReviewState'));
+        //   this.initializing = false;
+        // }
+        // beforeRouteEnter(to: VueRouter, from: VueRouter){
+        //   if (to !== from) {
+        //     this.initializing = true;
+        //     this.changeFormComponent = sessionStorage.getItem('changeComponentsStates');
+        //     toolStoreModule.setProgressPostingReviewState(sessionStorage.getItem('progressPostingReviewState'));
+        //     this.initializing = false;
+        //   }
+        // }
     }
     ChangeReviewPostingForm.prototype.changeFormComponents = function () {
         this.initializing = true;
@@ -5639,20 +5711,6 @@ var ChangeReviewPostingForm = /** @class */ (function (_super) {
         _store_modules_tool__WEBPACK_IMPORTED_MODULE_8__["toolStoreModule"].setProgressPostingReviewState(this.changeFormComponent);
         this.initializing = false;
     };
-    // TODO:画面移動をした際にwebストレージを破棄させる処理を走らせる。
-    //ルートの変更を感知するたびにfetchを発火させる。
-    ChangeReviewPostingForm.prototype.fetchData = function () {
-        this.changeFormComponent = sessionStorage.getItem('changeComponentsStates');
-        _store_modules_tool__WEBPACK_IMPORTED_MODULE_8__["toolStoreModule"].setProgressPostingReviewState(sessionStorage.getItem('progressPostingReviewState'));
-    };
-    ChangeReviewPostingForm.prototype.created = function () {
-        this.initializing = true;
-        this.fetchData();
-        this.initializing = false;
-    };
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-        Object(vue_property_decorator__WEBPACK_IMPORTED_MODULE_1__["Watch"])('$route')
-    ], ChangeReviewPostingForm.prototype, "fetchData", null);
     ChangeReviewPostingForm = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
         Object(vue_property_decorator__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             components: {
@@ -6480,8 +6538,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue_property_decorator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue-property-decorator */ "./node_modules/vue-property-decorator/lib/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _utils_validate__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/utils/validate */ "./resources/ts/utils/validate.ts");
-/* harmony import */ var _store_modules_tool__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/store/modules/tool */ "./resources/ts/store/modules/tool.ts");
+/* harmony import */ var js_cookie__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! js-cookie */ "./node_modules/js-cookie/src/js.cookie.js");
+/* harmony import */ var js_cookie__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(js_cookie__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _utils_validate__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/utils/validate */ "./resources/ts/utils/validate.ts");
+/* harmony import */ var _store_modules_tool__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @/store/modules/tool */ "./resources/ts/store/modules/tool.ts");
+
 
 
 
@@ -6511,6 +6572,7 @@ var ReviewRegisterPc = /** @class */ (function (_super) {
         _this.businessOutlook = null;
         _this.generalEstimationTitle = null;
         _this.generalEstimation = null;
+        _this.user_id = null;
         _this.joiningRouteErrMsg = null;
         _this.enrollmentStatusErrMsg = null;
         _this.occupationErrMsg = null;
@@ -6556,7 +6618,7 @@ var ReviewRegisterPc = /** @class */ (function (_super) {
                                 console.log("入社経路欄が未入力です。");
                             this.joiningRouteErrMsg = "入社経路欄が未入力です。";
                         }
-                        else if (!Object(_utils_validate__WEBPACK_IMPORTED_MODULE_3__["validHalfNumAlp"])(this.joiningRoute)) {
+                        else if (!Object(_utils_validate__WEBPACK_IMPORTED_MODULE_4__["validHalfNumAlp"])(this.joiningRoute)) {
                             this.commonErrMsg = null,
                                 this.joiningRoute = null,
                                 this.joiningRouteErrMsg = null;
@@ -6580,7 +6642,7 @@ var ReviewRegisterPc = /** @class */ (function (_super) {
                                 console.log("在籍状況欄が未入力です。");
                             this.enrollmentStatusErrMsg = "在籍状況欄が未入力です。";
                         }
-                        else if (!Object(_utils_validate__WEBPACK_IMPORTED_MODULE_3__["validHalfNumAlp"])(this.enrollmentStatus)) {
+                        else if (!Object(_utils_validate__WEBPACK_IMPORTED_MODULE_4__["validHalfNumAlp"])(this.enrollmentStatus)) {
                             this.commonErrMsg = null,
                                 this.enrollmentStatus = null,
                                 this.enrollmentStatusErrMsg = null,
@@ -6604,7 +6666,7 @@ var ReviewRegisterPc = /** @class */ (function (_super) {
                                 console.log("在籍時の職種欄が未入力です。");
                             this.occupationErrMsg = "在籍時の職種欄が未入力です。";
                         }
-                        else if (!Object(_utils_validate__WEBPACK_IMPORTED_MODULE_3__["validHalfNumAlp"])(this.occupation)) {
+                        else if (!Object(_utils_validate__WEBPACK_IMPORTED_MODULE_4__["validHalfNumAlp"])(this.occupation)) {
                             this.commonErrMsg = null,
                                 this.occupation = null,
                                 this.occupationErrMsg = null,
@@ -6628,7 +6690,7 @@ var ReviewRegisterPc = /** @class */ (function (_super) {
                                 console.log("在籍時の役職欄が未入力です。");
                             this.positionErrMsg = "在籍時の役職欄が未入力です。";
                         }
-                        else if (!Object(_utils_validate__WEBPACK_IMPORTED_MODULE_3__["validHalfNumAlp"])(this.position)) {
+                        else if (!Object(_utils_validate__WEBPACK_IMPORTED_MODULE_4__["validHalfNumAlp"])(this.position)) {
                             this.commonErrMsg = null,
                                 this.position = null,
                                 this.positionErrMsg = null,
@@ -6652,7 +6714,7 @@ var ReviewRegisterPc = /** @class */ (function (_super) {
                                 console.log("在籍期間欄が未入力です。");
                             this.enrollmentPeriodErrMsg = "在籍期間欄が未入力です。";
                         }
-                        else if (!Object(_utils_validate__WEBPACK_IMPORTED_MODULE_3__["validHalfNumAlp"])(this.enrollmentPeriod)) {
+                        else if (!Object(_utils_validate__WEBPACK_IMPORTED_MODULE_4__["validHalfNumAlp"])(this.enrollmentPeriod)) {
                             this.commonErrMsg = null,
                                 this.enrollmentPeriod = null,
                                 this.enrollmentPeriodErrMsg = null;
@@ -6676,7 +6738,7 @@ var ReviewRegisterPc = /** @class */ (function (_super) {
                                 console.log("在籍形態欄が未入力です。");
                             this.employmentStatusErrMsg = "在籍形態欄が未入力です。";
                         }
-                        else if (!Object(_utils_validate__WEBPACK_IMPORTED_MODULE_3__["validHalfNumAlp"])(this.employmentStatus)) {
+                        else if (!Object(_utils_validate__WEBPACK_IMPORTED_MODULE_4__["validHalfNumAlp"])(this.employmentStatus)) {
                             this.commonErrMsg = null,
                                 this.employmentStatus = null,
                                 this.employmentStatusErrMsg = null,
@@ -6700,7 +6762,7 @@ var ReviewRegisterPc = /** @class */ (function (_super) {
                                 console.log("福利厚生欄が未入力です。");
                             this.welfareOfficeEnvironmentErrMsg = "福利厚生欄が未入力です。";
                         }
-                        else if (!Object(_utils_validate__WEBPACK_IMPORTED_MODULE_3__["validHalfNumAlp"])(this.welfareOfficeEnvironment)) {
+                        else if (!Object(_utils_validate__WEBPACK_IMPORTED_MODULE_4__["validHalfNumAlp"])(this.welfareOfficeEnvironment)) {
                             this.commonErrMsg = null,
                                 this.welfareOfficeEnvironment = null,
                                 this.welfareOfficeEnvironmentErrMsg = null,
@@ -6724,7 +6786,7 @@ var ReviewRegisterPc = /** @class */ (function (_super) {
                                 console.log("勤務時間欄が未入力です。");
                             this.workingHoursErrMsg = "勤務時間欄が未入力です。";
                         }
-                        else if (!Object(_utils_validate__WEBPACK_IMPORTED_MODULE_3__["validHalfNumAlp"])(this.workingHours)) {
+                        else if (!Object(_utils_validate__WEBPACK_IMPORTED_MODULE_4__["validHalfNumAlp"])(this.workingHours)) {
                             this.commonErrMsg = null,
                                 this.workingHours = null,
                                 this.workingHoursErrMsg = null,
@@ -6748,7 +6810,7 @@ var ReviewRegisterPc = /** @class */ (function (_super) {
                                 console.log("社内制度欄が未入力です。");
                             this.inCompanySystemErrMsg = "社内制度欄が未入力です。";
                         }
-                        else if (!Object(_utils_validate__WEBPACK_IMPORTED_MODULE_3__["validHalfNumAlp"])(this.inCompanySystem)) {
+                        else if (!Object(_utils_validate__WEBPACK_IMPORTED_MODULE_4__["validHalfNumAlp"])(this.inCompanySystem)) {
                             this.commonErrMsg = null,
                                 this.inCompanySystem = null,
                                 // 半角英数時チェック
@@ -6771,7 +6833,7 @@ var ReviewRegisterPc = /** @class */ (function (_super) {
                                 console.log("企業文化欄が未入力です。");
                             this.corporateCultureErrMsg = "企業文化欄が未入力です。";
                         }
-                        else if (!Object(_utils_validate__WEBPACK_IMPORTED_MODULE_3__["validHalfNumAlp"])(this.corporateCulture)) {
+                        else if (!Object(_utils_validate__WEBPACK_IMPORTED_MODULE_4__["validHalfNumAlp"])(this.corporateCulture)) {
                             this.commonErrMsg = null,
                                 this.corporateCulture = null,
                                 // 半角英数時チェック
@@ -6794,7 +6856,7 @@ var ReviewRegisterPc = /** @class */ (function (_super) {
                                 console.log("休暇についての欄が未入力です。");
                             this.holidayErrMsg = "休暇についての欄が未入力です。";
                         }
-                        else if (!Object(_utils_validate__WEBPACK_IMPORTED_MODULE_3__["validHalfNumAlp"])(this.holiday)) {
+                        else if (!Object(_utils_validate__WEBPACK_IMPORTED_MODULE_4__["validHalfNumAlp"])(this.holiday)) {
                             this.commonErrMsg = null,
                                 this.holiday = null,
                                 // 半角英数時チェック
@@ -6817,7 +6879,7 @@ var ReviewRegisterPc = /** @class */ (function (_super) {
                                 console.log("組織体制欄が未入力です。");
                             this.organizationalStructureErrMsg = "組織体制欄が未入力です。";
                         }
-                        else if (!Object(_utils_validate__WEBPACK_IMPORTED_MODULE_3__["validHalfNumAlp"])(this.organizationalStructure)) {
+                        else if (!Object(_utils_validate__WEBPACK_IMPORTED_MODULE_4__["validHalfNumAlp"])(this.organizationalStructure)) {
                             this.commonErrMsg = null,
                                 this.organizationalStructure = null,
                                 // 半角英数時チェック
@@ -6840,7 +6902,7 @@ var ReviewRegisterPc = /** @class */ (function (_super) {
                                 console.log("女性の働きやすさについての欄が未入力です。");
                             this.easeOfWorkForWomenErrMsg = "女性の働きやすさについての欄が未入力です。";
                         }
-                        else if (!Object(_utils_validate__WEBPACK_IMPORTED_MODULE_3__["validHalfNumAlp"])(this.easeOfWorkForWomen)) {
+                        else if (!Object(_utils_validate__WEBPACK_IMPORTED_MODULE_4__["validHalfNumAlp"])(this.easeOfWorkForWomen)) {
                             this.commonErrMsg = null,
                                 this.easeOfWorkForWomen = null,
                                 // 半角英数時チェック
@@ -6863,7 +6925,7 @@ var ReviewRegisterPc = /** @class */ (function (_super) {
                             console.log("入社前とのギャップ欄が未入力です。");
                             this.imageGapErrMsg = "入社前とのギャップ欄が未入力です。";
                         }
-                        else if (!Object(_utils_validate__WEBPACK_IMPORTED_MODULE_3__["validHalfNumAlp"])(this.imageGap)) {
+                        else if (!Object(_utils_validate__WEBPACK_IMPORTED_MODULE_4__["validHalfNumAlp"])(this.imageGap)) {
                             this.commonErrMsg = null,
                                 this.imageGap = null,
                                 this.imageGapErrMsg = null;
@@ -6887,7 +6949,7 @@ var ReviewRegisterPc = /** @class */ (function (_super) {
                             console.log("働きがいの欄が未入力です。");
                             this.rewardingWorkErrMsg = "働きがいの欄が未入力です。";
                         }
-                        else if (!Object(_utils_validate__WEBPACK_IMPORTED_MODULE_3__["validHalfNumAlp"])(this.rewardingWork)) {
+                        else if (!Object(_utils_validate__WEBPACK_IMPORTED_MODULE_4__["validHalfNumAlp"])(this.rewardingWork)) {
                             this.rewardingWorkErrMsg = null;
                             this.commonErrMsg = null,
                                 this.rewardingWork = null,
@@ -6911,7 +6973,7 @@ var ReviewRegisterPc = /** @class */ (function (_super) {
                                 console.log("強み・弱みの欄が未入力です。");
                             this.strengthsAndWeaknessesErrMsg = "強み・弱みの欄が未入力です。";
                         }
-                        else if (!Object(_utils_validate__WEBPACK_IMPORTED_MODULE_3__["validHalfNumAlp"])(this.strengthsAndWeaknesses)) {
+                        else if (!Object(_utils_validate__WEBPACK_IMPORTED_MODULE_4__["validHalfNumAlp"])(this.strengthsAndWeaknesses)) {
                             this.commonErrMsg = null,
                                 this.strengthsAndWeaknesses = null,
                                 this.strengthsAndWeaknessesErrMsg = null,
@@ -6935,7 +6997,7 @@ var ReviewRegisterPc = /** @class */ (function (_super) {
                                 console.log("年収・給与欄が未入力です。");
                             this.annualIncomeSalaryErrMsg = "年収・給与欄が未入力です。";
                         }
-                        else if (!Object(_utils_validate__WEBPACK_IMPORTED_MODULE_3__["validHalfNumAlp"])(this.annualIncomeSalary)) {
+                        else if (!Object(_utils_validate__WEBPACK_IMPORTED_MODULE_4__["validHalfNumAlp"])(this.annualIncomeSalary)) {
                             this.commonErrMsg = null,
                                 this.annualIncomeSalary = null,
                                 this.annualIncomeSalaryErrMsg = null,
@@ -6959,7 +7021,7 @@ var ReviewRegisterPc = /** @class */ (function (_super) {
                                 console.log("事業展望欄が未入力です。");
                             this.businessOutlookErrMsg = "事業展望欄が未入力です。";
                         }
-                        else if (!Object(_utils_validate__WEBPACK_IMPORTED_MODULE_3__["validHalfNumAlp"])(this.businessOutlook)) {
+                        else if (!Object(_utils_validate__WEBPACK_IMPORTED_MODULE_4__["validHalfNumAlp"])(this.businessOutlook)) {
                             this.commonErrMsg = null,
                                 this.businessOutlook = null,
                                 this.businessOutlookErrMsg = null,
@@ -6983,7 +7045,7 @@ var ReviewRegisterPc = /** @class */ (function (_super) {
                             console.log("レビューのタイトル欄が未入力です。");
                             this.generalEstimationTitleErrMsg = "レビューのタイトル欄が未入力です。";
                         }
-                        else if (!Object(_utils_validate__WEBPACK_IMPORTED_MODULE_3__["validHalfNumAlp"])(this.generalEstimationTitle)) {
+                        else if (!Object(_utils_validate__WEBPACK_IMPORTED_MODULE_4__["validHalfNumAlp"])(this.generalEstimationTitle)) {
                             this.commonErrMsg = null,
                                 this.generalEstimationTitle = null,
                                 this.generalEstimationTitleErrMsg = null;
@@ -7007,7 +7069,7 @@ var ReviewRegisterPc = /** @class */ (function (_super) {
                             console.log("総評欄が未入力です。");
                             this.generalEstimationErrMsg = "総評欄が未入力です。";
                         }
-                        else if (!Object(_utils_validate__WEBPACK_IMPORTED_MODULE_3__["validHalfNumAlp"])(this.generalEstimation)) {
+                        else if (!Object(_utils_validate__WEBPACK_IMPORTED_MODULE_4__["validHalfNumAlp"])(this.generalEstimation)) {
                             this.commonErrMsg = null,
                                 this.generalEstimation = null,
                                 this.generalEstimationErrMsg = null;
@@ -7036,7 +7098,7 @@ var ReviewRegisterPc = /** @class */ (function (_super) {
                         _a.label = 1;
                     case 1:
                         _a.trys.push([1, 3, , 4]);
-                        _store_modules_tool__WEBPACK_IMPORTED_MODULE_4__["toolStoreModule"].setLoading();
+                        _store_modules_tool__WEBPACK_IMPORTED_MODULE_5__["toolStoreModule"].setLoading();
                         param = {
                             joining_route: sessionStorage.getItem('joining_route'),
                             enrollment_status: sessionStorage.getItem('enrollment_status'),
@@ -7058,12 +7120,15 @@ var ReviewRegisterPc = /** @class */ (function (_super) {
                             business_outlook: sessionStorage.getItem('enrollment_period'),
                             general_estimation_title: sessionStorage.getItem('general_estimation_title'),
                             general_estimation: sessionStorage.getItem('general_estimation'),
+                            user_id: this.user_id,
+                            company_id: this.$route.query.company_id,
                         };
+                        console.log(param);
                         return [4 /*yield*/, axios__WEBPACK_IMPORTED_MODULE_2___default.a.post('/api/registPostingReview', param)];
                     case 2:
                         registPostingReview = _a.sent();
                         console.dir(registPostingReview);
-                        _store_modules_tool__WEBPACK_IMPORTED_MODULE_4__["toolStoreModule"].clearLoading();
+                        _store_modules_tool__WEBPACK_IMPORTED_MODULE_5__["toolStoreModule"].clearLoading();
                         sessionStorage.setItem('changeComponentsStates', 'SubmissionComplete');
                         this.changeformcomponents();
                         return [3 /*break*/, 4];
@@ -7101,6 +7166,7 @@ var ReviewRegisterPc = /** @class */ (function (_super) {
         this.businessOutlook = sessionStorage.getItem('business_outlook');
         this.generalEstimationTitle = sessionStorage.getItem('general_estimation_title');
         this.generalEstimation = sessionStorage.getItem('general_estimation');
+        this.user_id = js_cookie__WEBPACK_IMPORTED_MODULE_3___default.a.get('user_id');
     };
     ReviewRegisterPc.prototype.created = function () {
         this.fetchData();
@@ -7129,6 +7195,9 @@ var ReviewRegisterPc = /** @class */ (function (_super) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var vue_property_decorator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue-property-decorator */ "./node_modules/vue-property-decorator/lib/index.js");
+/* harmony import */ var js_cookie__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! js-cookie */ "./node_modules/js-cookie/src/js.cookie.js");
+/* harmony import */ var js_cookie__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(js_cookie__WEBPACK_IMPORTED_MODULE_2__);
+
 
 
 var ReviewRegisterSc = /** @class */ (function (_super) {
@@ -7136,6 +7205,36 @@ var ReviewRegisterSc = /** @class */ (function (_super) {
     function ReviewRegisterSc() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
+    ReviewRegisterSc.prototype.changeformcomponents = function () { };
+    ;
+    ReviewRegisterSc.prototype.myPage = function () {
+        sessionStorage.removeItem('joining_route');
+        sessionStorage.removeItem('enrollment_status');
+        sessionStorage.removeItem('occupation');
+        sessionStorage.removeItem('position');
+        sessionStorage.removeItem('enrollment_period');
+        sessionStorage.removeItem('employment_status');
+        sessionStorage.removeItem('welfare_office_environment');
+        sessionStorage.removeItem('working_hours');
+        sessionStorage.removeItem('inCompany_system');
+        sessionStorage.removeItem('corporate_culture');
+        sessionStorage.removeItem('holiday');
+        sessionStorage.removeItem('organizational_structure');
+        sessionStorage.removeItem('ease_of_work_for_women');
+        sessionStorage.removeItem('image_gap');
+        sessionStorage.removeItem('rewarding_work');
+        sessionStorage.removeItem('strengths_and_weaknesses');
+        sessionStorage.removeItem('annual_income_salary');
+        sessionStorage.removeItem('business_outlook');
+        sessionStorage.removeItem('general_estimation_title');
+        sessionStorage.removeItem('general_estimation');
+        sessionStorage.setItem('changeComponentsStates', 'JoiningRoute');
+        this.changeformcomponents();
+        this.$router.push("/MyPage/" + js_cookie__WEBPACK_IMPORTED_MODULE_2___default.a.get('user_id'));
+    };
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
+        Object(vue_property_decorator__WEBPACK_IMPORTED_MODULE_1__["Emit"])()
+    ], ReviewRegisterSc.prototype, "changeformcomponents", null);
     ReviewRegisterSc = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
         vue_property_decorator__WEBPACK_IMPORTED_MODULE_1__["Component"]
     ], ReviewRegisterSc);
@@ -9215,7 +9314,10 @@ var render = function() {
                 {
                   staticClass: "menuAbout__itemWrap-lineNone",
                   attrs: {
-                    to: "/reviewRegisterForm/company_id=" + displayData.id
+                    to: {
+                      name: "ReviewRegisterForm",
+                      query: { company_id: "" + displayData.id }
+                    }
                   }
                 },
                 [_c("li", [_vm._v(_vm._s(_vm.settings.makeReview))])]
@@ -11460,20 +11562,28 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
-    _c("div", [_vm._v("投稿完了(sc)")]),
-    _vm._v(" "),
-    _c("div", { staticClass: "revRegistJr-content__bottom-wrap" }, [
-      _c(
-        "button",
-        {
-          staticClass:
-            "revRegistJr-content__bottom-next revRegistJr-content__bottom-link",
-          attrs: { type: "submit" },
-          on: { click: _vm.mypage }
-        },
-        [_vm._v("マイページへ")]
-      )
+  return _c("div", { staticClass: "revRegistCm-content__form-element" }, [
+    _c("div", { staticClass: "revRegistCm-content__form-wrap" }, [
+      _c("h4", { staticClass: "revRegistCm-content__title" }, [
+        _vm._v("投稿完了")
+      ]),
+      _vm._v(" "),
+      _c("h1", { staticClass: "revRegistCm-content__sub" }, [
+        _vm._v("投稿ありがとうございました")
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "revRegistCm-content__bottom-wrap" }, [
+        _c(
+          "button",
+          {
+            staticClass:
+              "revRegistCm-content__bottom-next revRegistCm-content__bottom-link",
+            attrs: { type: "submit" },
+            on: { click: _vm.myPage }
+          },
+          [_vm._v("マイページへ")]
+        )
+      ])
     ])
   ])
 }
@@ -31718,7 +31828,9 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ReviewRegister_Sc_vue_vue_type_template_id_693d3327___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ReviewRegister-Sc.vue?vue&type=template&id=693d3327& */ "./resources/ts/components/postingReview/postingReview/ReviewRegister-Sc.vue?vue&type=template&id=693d3327&");
 /* harmony import */ var _ReviewRegister_Sc_vue_vue_type_script_lang_ts_scoped_true___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ReviewRegister-Sc.vue?vue&type=script&lang=ts&scoped=true& */ "./resources/ts/components/postingReview/postingReview/ReviewRegister-Sc.vue?vue&type=script&lang=ts&scoped=true&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* empty/unused harmony star reexport *//* harmony import */ var _ReviewRegister_Sc_vue_vue_type_style_index_0_lang_scss_scope_true___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ReviewRegister-Sc.vue?vue&type=style&index=0&lang=scss&scope=true& */ "./resources/ts/components/postingReview/postingReview/ReviewRegister-Sc.vue?vue&type=style&index=0&lang=scss&scope=true&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
 
 
 
@@ -31726,7 +31838,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
   _ReviewRegister_Sc_vue_vue_type_script_lang_ts_scoped_true___WEBPACK_IMPORTED_MODULE_1__["default"],
   _ReviewRegister_Sc_vue_vue_type_template_id_693d3327___WEBPACK_IMPORTED_MODULE_0__["render"],
   _ReviewRegister_Sc_vue_vue_type_template_id_693d3327___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
@@ -31755,6 +31867,22 @@ component.options.__file = "resources/ts/components/postingReview/postingReview/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_ts_loader_index_js_ref_5_node_modules_vue_loader_lib_index_js_vue_loader_options_ReviewRegister_Sc_vue_vue_type_script_lang_ts_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/ts-loader??ref--5!../../../../../node_modules/vue-loader/lib??vue-loader-options!./ReviewRegister-Sc.vue?vue&type=script&lang=ts&scoped=true& */ "./node_modules/ts-loader/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/ts/components/postingReview/postingReview/ReviewRegister-Sc.vue?vue&type=script&lang=ts&scoped=true&");
 /* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_ts_loader_index_js_ref_5_node_modules_vue_loader_lib_index_js_vue_loader_options_ReviewRegister_Sc_vue_vue_type_script_lang_ts_scoped_true___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/ts/components/postingReview/postingReview/ReviewRegister-Sc.vue?vue&type=style&index=0&lang=scss&scope=true&":
+/*!********************************************************************************************************************************!*\
+  !*** ./resources/ts/components/postingReview/postingReview/ReviewRegister-Sc.vue?vue&type=style&index=0&lang=scss&scope=true& ***!
+  \********************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_2_node_modules_sass_loader_dist_cjs_js_ref_8_3_node_modules_vue_loader_lib_index_js_vue_loader_options_ReviewRegister_Sc_vue_vue_type_style_index_0_lang_scss_scope_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/style-loader!../../../../../node_modules/css-loader!../../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../../node_modules/postcss-loader/src??ref--8-2!../../../../../node_modules/sass-loader/dist/cjs.js??ref--8-3!../../../../../node_modules/vue-loader/lib??vue-loader-options!./ReviewRegister-Sc.vue?vue&type=style&index=0&lang=scss&scope=true& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/ts/components/postingReview/postingReview/ReviewRegister-Sc.vue?vue&type=style&index=0&lang=scss&scope=true&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_2_node_modules_sass_loader_dist_cjs_js_ref_8_3_node_modules_vue_loader_lib_index_js_vue_loader_options_ReviewRegister_Sc_vue_vue_type_style_index_0_lang_scss_scope_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_2_node_modules_sass_loader_dist_cjs_js_ref_8_3_node_modules_vue_loader_lib_index_js_vue_loader_options_ReviewRegister_Sc_vue_vue_type_style_index_0_lang_scss_scope_true___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_2_node_modules_sass_loader_dist_cjs_js_ref_8_3_node_modules_vue_loader_lib_index_js_vue_loader_options_ReviewRegister_Sc_vue_vue_type_style_index_0_lang_scss_scope_true___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_2_node_modules_sass_loader_dist_cjs_js_ref_8_3_node_modules_vue_loader_lib_index_js_vue_loader_options_ReviewRegister_Sc_vue_vue_type_style_index_0_lang_scss_scope_true___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+
 
 /***/ }),
 

@@ -31,9 +31,10 @@
           </div>
         </div>
 
+        <!-- :to="`/reviewRegisterForm/company_id=${displayData.id}`" -->
         <div @click="next">
           <router-link
-            :to="`/reviewRegisterForm/company_id=${displayData.id}`"
+            :to="{name: 'ReviewRegisterForm', query: {company_id: `${displayData.id}`}}"
             class="menuAbout__itemWrap-lineNone"
           >
             <li>{{settings.makeReview}}</li>
