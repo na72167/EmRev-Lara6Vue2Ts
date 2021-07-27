@@ -24,7 +24,7 @@
 </template>
 
 <script lang="ts" scoped>
-import { Component,Vue } from 'vue-property-decorator';
+import { Component,Watch,Vue } from 'vue-property-decorator';
 import axios from "axios";
 import Cookies from "js-cookie"
 import { CommonErrMsg } from '@/utils/auth';
@@ -32,12 +32,9 @@ import { toolStoreModule } from '@/store/modules/tool';
 
 @Component
 export default class AboutMenu extends Vue {
-  public email: string | null | undefined = null;
+  public user_id: string | null | undefined = null;
+  public email: string |null | undefined = null;
   public commonErrMsg: string |null = null;
-
-  public created(){
-    this.email = Cookies.get('email');
-  }
 
   public cancel(){
     this.$router.push(`/MyPage/${Cookies.get('user_id')}`);
@@ -46,12 +43,13 @@ export default class AboutMenu extends Vue {
   public async registe(){
     try {
 
-      const email = {
+      const param = {
+        user_id: this.user_id,
         email: this.email
       }
 
       toolStoreModule.setLoading();
-      const employeeRegistration = await axios.post('/api/contributorRegistration',email);
+      const employeeRegistration = await axios.post('/api/contributorRegistration',param);
       console.dir(employeeRegistration);
       toolStoreModule.clearLoading();
 
@@ -61,6 +59,17 @@ export default class AboutMenu extends Vue {
       this.commonErrMsg = CommonErrMsg.commonErrMsg;
     }
   }
+
+  @Watch('$route')
+  public fetchdata(){
+    this.user_id = Cookies.get('user_id');
+    this.email = Cookies.get('email');
+  }
+
+  public created(){
+    this.fetchdata();
+  }
+
 }
 </script>
 

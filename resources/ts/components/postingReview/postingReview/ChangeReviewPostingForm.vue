@@ -37,7 +37,7 @@
 </template>
 
 <script lang="ts" scoped>
-import { Component,Prop,Vue } from 'vue-property-decorator';
+import { Component,Watch,Vue } from 'vue-property-decorator';
 import ReviewRegisterJr from '@/components/postingReview/postingReview/ReviewRegister-Jr'
 import ReviewRegisterIc from '@/components/postingReview/postingReview/ReviewRegister-Ic'
 import ReviewRegisterGj from '@/components/postingReview/postingReview/ReviewRegister-Gj'
@@ -69,10 +69,17 @@ export default class ChangeReviewPostingForm extends Vue {
   }
 
   // TODO:画面移動をした際にwebストレージを破棄させる処理を走らせる。
-  public created(){
-    this.initializing = true;
+  //ルートの変更を感知するたびにfetchを発火させる。
+
+  @Watch('$route')
+  public fetchData(){
     this.changeFormComponent = sessionStorage.getItem('changeComponentsStates');
     toolStoreModule.setProgressPostingReviewState(sessionStorage.getItem('progressPostingReviewState'));
+  }
+
+  public created(){
+    this.initializing = true;
+    this.fetchData();
     this.initializing = false;
   }
 }
