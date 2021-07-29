@@ -8,7 +8,7 @@
         <div class="rigisRigisterReviewList__imgComInfoWrap">
           <div class="rigisRigisterReviewList__imgStyle">
             <img class="rigisRigisterReviewList__img"
-            src="<?php echo etc::showImg(etc::sanitize($val['pic1'])); ?>">
+            src="#">
           </div>
 
           <div class="rigisRigisterReviewList__companyWrap">
@@ -34,7 +34,7 @@
         <!-- :to="`/reviewRegisterForm/company_id=${displayData.id}`" -->
         <div @click="next">
           <router-link
-            :to="{name: 'ReviewRegisterForm', query: {company_id: `${displayData.id}`}}"
+            :to="{name: 'ReviewRegisterForm', query: { company_id: `${displayData.id}`}}"
             class="menuAbout__itemWrap-lineNone"
           >
             <li>{{settings.makeReview}}</li>
@@ -50,7 +50,7 @@ import { Component,Prop,Vue } from 'vue-property-decorator';
 
 @Component
 export default class ShowCompanyDataTable extends Vue {
-  @Prop(Object) public displayDatas!: Object;
+  @Prop() public displayDatas!: any;
   @Prop(Object) public settings!: Object;
 
   public next(){

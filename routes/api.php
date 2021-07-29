@@ -20,14 +20,15 @@ Route::post('/passwordReminder', 'Auth\AuthController@updatePassword')->name('pa
 Route::post('/passwordReceive', 'Auth\AuthController@passwordReceive')->name('passwordReceive');
 Route::post('/withdrawal', 'Auth\AuthController@withdrawal')->name('withdrawal');
 
-//レビュー登録
+// レビュー登録
 Route::post('/registPostingReview', 'postingReview\postingReviewController@registPostingReview')->name('registPostingReview');
 
-//権限付加
+// 権限付加
 Route::post('/contributorRegistration', 'roll\changeOfAuthorityController@contributorRegistration')->name('contributorRegistration');
 
 // 会社情報検索
-Route::post('/searchCompanyDate', 'companyDate\searchCompanyDateController@searchCompanyDate')->name('searchCompanyDate');
+Route::post('/searchCompanyDate','companyDate\searchCompanyDateController@searchCompanyDate')->name('searchCompanyDate');
+Route::post('/conditionalSearchCompanyDate','companyDate\searchCompanyDateController@conditionalSearchCompanyDate')->name('conditionalSearchCompanyDate');
 
 // 会社情報登録申請
 Route::post('/applyCompany', 'applyCompany\applyCompanyController@applyCompany')->name('applyCompany');

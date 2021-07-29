@@ -27,6 +27,7 @@ class ComponyMenu extends VuexModule {
   // public lording : boolean = false;
 
   get getSelectComponyData(): any{
+    console.log(this.selectComponyData);
     return this.selectComponyData;
   }
 
@@ -40,11 +41,23 @@ class ComponyMenu extends VuexModule {
     this.selectComponyData = val;
   }
 
+  @Mutation
+  private SET_CONDITIONAL_SEARCH_COMPANY_DATE(val: any): void{
+    this.selectComponyData = val;
+  }
+
   @Action
-  public async setSelectComponyMenu(params: any){
-    const componyMenuDatas = await axios.post('/api/searchCompanyDate',params);
+  public async setSelectComponyMenu(query?: any){
+    const componyMenuDatas = await axios.post('/api/searchCompanyDate', query);
     //TODO:修正予定(.data.data.data)
     this.SET_SELECT_COMPONY_MENU(componyMenuDatas.data.data);
+  }
+
+  @Action
+  public async setConditionalSearchCompanyDate(params?: any,query?: any){
+    const componyMenuDatas = await axios.post('/api/conditionalSearchCompanyDate',params,query);
+    //TODO:修正予定(.data.data.data)
+    this.SET_CONDITIONAL_SEARCH_COMPANY_DATE(componyMenuDatas);
   }
 
 }
