@@ -2241,6 +2241,25 @@ exports.push([module.i, ".revRegistCm-content {\n  height: 630px;\n  width: 100%
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/ts/components/search/SearchCompanyDataComponets.vue?vue&type=style&index=0&lang=scss&scope=true&":
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--8-2!./node_modules/sass-loader/dist/cjs.js??ref--8-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/ts/components/search/SearchCompanyDataComponets.vue?vue&type=style&index=0&lang=scss&scope=true& ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".rigisRigisterReviewListSearch {\n  height: 670px;\n  width: 290px;\n  background-color: #fff;\n  border-radius: 10px;\n  margin-top: 30px;\n  position: relative;\n  left: 550px;\n  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);\n  padding: 20px 20px;\n}\n.rigisRigisterReviewListSearch__title {\n  font-size: 22px;\n  text-align: center;\n}\n.rigisRigisterReviewListSearch__form {\n  height: 100%;\n  margin-top: 10px;\n}\n.rigisRigisterReviewListSearch__inputContentStyle {\n  margin: 0 auto 10px;\n  padding: 0 10px;\n}\n.rigisRigisterReviewListSearch__inputName {\n  font-size: 14px;\n  height: 16px;\n}\n.rigisRigisterReviewListSearch__inputStyle {\n  border: 1px solid #707070;\n  width: 220px;\n  border-radius: 5px;\n}\n.rigisRigisterReviewListSearch__betweenStyleWrap {\n  margin-top: 5px;\n  width: 370px;\n  overflow: hidden;\n}\n.rigisRigisterReviewListSearch__betweenStyle {\n  border: 1px solid #707070;\n  border-radius: 5px;\n  width: 101px;\n  float: left;\n}\n.rigisRigisterReviewListSearch__betweenStyleHoge {\n  font-size: 30px;\n  margin-top: -18px;\n  float: left;\n}\n.rigisRigisterReviewListSearch__bottomStyle {\n  text-align: center;\n  display: block;\n  width: 150px;\n  padding: 5px 0;\n  margin: 20px auto 0;\n  background-color: #06D1EC;\n  color: #fff;\n  border: none;\n  border: 1px solid #fff;\n}", ""]);
+
+// exports
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/ts/components/withdrawal/withdrawal.vue?vue&type=style&index=0&lang=scss&scope=true&":
 /*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--8-2!./node_modules/sass-loader/dist/cjs.js??ref--8-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/ts/components/withdrawal/withdrawal.vue?vue&type=style&index=0&lang=scss&scope=true& ***!
@@ -3565,6 +3584,36 @@ options.transform = transform
 options.insertInto = undefined;
 
 var update = __webpack_require__(/*! ../../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/ts/components/search/SearchCompanyDataComponets.vue?vue&type=style&index=0&lang=scss&scope=true&":
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--8-2!./node_modules/sass-loader/dist/cjs.js??ref--8-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/ts/components/search/SearchCompanyDataComponets.vue?vue&type=style&index=0&lang=scss&scope=true& ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../node_modules/css-loader!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--8-2!../../../../node_modules/sass-loader/dist/cjs.js??ref--8-3!../../../../node_modules/vue-loader/lib??vue-loader-options!./SearchCompanyDataComponets.vue?vue&type=style&index=0&lang=scss&scope=true& */ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/ts/components/search/SearchCompanyDataComponets.vue?vue&type=style&index=0&lang=scss&scope=true&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
 
 if(content.locals) module.exports = content.locals;
 
@@ -5179,7 +5228,7 @@ var ShowCompanyDataTable = /** @class */ (function (_super) {
         sessionStorage.setItem('progressPostingReviewState', 'JoiningRoute');
     };
     Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-        Object(vue_property_decorator__WEBPACK_IMPORTED_MODULE_1__["Prop"])(Object)
+        Object(vue_property_decorator__WEBPACK_IMPORTED_MODULE_1__["Prop"])()
     ], ShowCompanyDataTable.prototype, "displayDatas", void 0);
     Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
         Object(vue_property_decorator__WEBPACK_IMPORTED_MODULE_1__["Prop"])(Object)
@@ -7256,13 +7305,58 @@ var ReviewRegisterSc = /** @class */ (function (_super) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var vue_property_decorator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue-property-decorator */ "./node_modules/vue-property-decorator/lib/index.js");
+/* harmony import */ var _store_modules_tool__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/store/modules/tool */ "./resources/ts/store/modules/tool.ts");
+
 
 
 var SearchCompanyDataComponets = /** @class */ (function (_super) {
     Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__extends"])(SearchCompanyDataComponets, _super);
     function SearchCompanyDataComponets() {
-        return _super !== null && _super.apply(this, arguments) || this;
+        var _this = _super !== null && _super.apply(this, arguments) || this;
+        _this.company_name = null;
+        _this.representative = null;
+        _this.location = null;
+        _this.industry = null;
+        _this.year_of_establishment = null;
+        _this.listed_year = null;
+        _this.number_of_employees = null;
+        _this.number_of_reviews = null;
+        _this.average_annual_income = null;
+        _this.average_age = null;
+        _this.commonErrMsg = null;
+        return _this;
     }
+    SearchCompanyDataComponets.prototype.searchstate = function (value) { };
+    ;
+    // TODO:これなどを参考に書き直す。
+    // Vueで項目が多い検索フォームでの状態の持ち方。
+    // https://zenn.dev/andynuma/articles/5f9ac0c01671d1
+    SearchCompanyDataComponets.prototype.Search = function () {
+        return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, function () {
+            var params;
+            return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__generator"])(this, function (_a) {
+                _store_modules_tool__WEBPACK_IMPORTED_MODULE_2__["toolStoreModule"].setLoading();
+                console.log("会社情報検索処理に入りました。");
+                params = {
+                    company_name: this.company_name,
+                    representative: this.representative,
+                    location: this.location,
+                    industry: this.industry,
+                    year_of_establishment: this.year_of_establishment,
+                    listed_year: this.listed_year,
+                    number_of_employees: this.number_of_employees,
+                    number_of_reviews: this.number_of_reviews,
+                    average_annual_income: this.average_annual_income,
+                    average_age: this.average_age,
+                };
+                this.searchstate(params);
+                return [2 /*return*/];
+            });
+        });
+    };
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
+        Object(vue_property_decorator__WEBPACK_IMPORTED_MODULE_1__["Emit"])()
+    ], SearchCompanyDataComponets.prototype, "searchstate", null);
     SearchCompanyDataComponets = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
         vue_property_decorator__WEBPACK_IMPORTED_MODULE_1__["Component"]
     ], SearchCompanyDataComponets);
@@ -7791,22 +7885,45 @@ var PostingReview = /** @class */ (function (_super) {
         // public introImg: any = introImg;
         _this.initializing = true;
         _this.settings = _utils_setting_postingReview__WEBPACK_IMPORTED_MODULE_6__["SETTINGS_REVIEW_COMPANY"];
-        //TODO:下はクエリパラメータを実際に付属させる前の動作確認用仮データなので修正する。
-        _this.params = 1;
         return _this;
     }
     Object.defineProperty(PostingReview.prototype, "companyDatas", {
+        //TODO:下はクエリパラメータを実際に付属させる前の動作確認用仮データなので修正する。
         get: function () {
             return _store_modules_selectComponyMenu__WEBPACK_IMPORTED_MODULE_7__["selectComponyMenu"].getSelectComponyData;
         },
         enumerable: false,
         configurable: true
     });
+    PostingReview.prototype.searchCompanyData = function (val) {
+        _store_modules_tool__WEBPACK_IMPORTED_MODULE_8__["toolStoreModule"].setLoading();
+        // const params = this.$route.query;
+        try {
+            this.initializing = true;
+            var params = val;
+            //TODO:仮データ
+            var query = {
+                current_page: 1
+            };
+            _store_modules_selectComponyMenu__WEBPACK_IMPORTED_MODULE_7__["selectComponyMenu"].setConditionalSearchCompanyDate(params, query);
+            this.initializing = false;
+            _store_modules_tool__WEBPACK_IMPORTED_MODULE_8__["toolStoreModule"].clearLoading();
+        }
+        catch (e) {
+            // handleApiError(e);
+        }
+    };
+    // ページの切り替え
+    // TODO:ページネーションを作った結果、引数のqueryがいらない可能性があるので確認後修正
     PostingReview.prototype.fetchData = function () {
         _store_modules_tool__WEBPACK_IMPORTED_MODULE_8__["toolStoreModule"].setLoading();
         // const params = this.$route.query;
         try {
-            _store_modules_selectComponyMenu__WEBPACK_IMPORTED_MODULE_7__["selectComponyMenu"].setSelectComponyMenu(this.params);
+            this.initializing = true;
+            var query = {
+                current_page: 1
+            };
+            _store_modules_selectComponyMenu__WEBPACK_IMPORTED_MODULE_7__["selectComponyMenu"].setSelectComponyMenu(query);
             this.initializing = false;
             _store_modules_tool__WEBPACK_IMPORTED_MODULE_8__["toolStoreModule"].clearLoading();
         }
@@ -9339,9 +9456,7 @@ var staticRenderFns = [
     return _c("div", { staticClass: "rigisRigisterReviewList__imgStyle" }, [
       _c("img", {
         staticClass: "rigisRigisterReviewList__img",
-        attrs: {
-          src: "<?php echo etc::showImg(etc::sanitize($val['pic1'])); ?>"
-        }
+        attrs: { src: "#" }
       })
     ])
   },
@@ -9789,13 +9904,16 @@ var render = function() {
           _vm._v(" "),
           _c("h3", [
             _vm._v("検索結果:"),
-            _c("span", [_vm._v(_vm._s(_vm.displayDatas.total))]),
+            _c("span", [_vm._v(_vm._s(_vm.displayDatas.data.total))]),
             _vm._v("件")
           ])
         ]),
         _vm._v(" "),
         _c("DataTable", {
-          attrs: { displayDatas: _vm.displayDatas.data, settings: _vm.settings }
+          attrs: {
+            displayDatas: _vm.displayDatas.data.data,
+            settings: _vm.settings
+          }
         }),
         _vm._v(" "),
         _c("Pagination")
@@ -11609,7 +11727,420 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [_vm._v("検索用コンポーネント")])
+  return _c("section", { staticClass: "rigisRigisterReviewListSearch" }, [
+    _c("h1", { staticClass: "rigisRigisterReviewListSearch__title" }, [
+      _vm._v("Company Search")
+    ]),
+    _vm._v(" "),
+    _c("div", [_vm._v(_vm._s(_vm.commonErrMsg))]),
+    _vm._v(" "),
+    _c(
+      "form",
+      {
+        staticClass: "rigisRigisterReviewListSearch__form",
+        on: {
+          submit: function($event) {
+            $event.preventDefault()
+            return _vm.Search.apply(null, arguments)
+          }
+        }
+      },
+      [
+        _c(
+          "div",
+          { staticClass: "rigisRigisterReviewListSearch__inputContentStyle" },
+          [
+            _c(
+              "h1",
+              { staticClass: "rigisRigisterReviewListSearch__inputName" },
+              [_vm._v("会社名")]
+            ),
+            _vm._v(" "),
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.company_name,
+                  expression: "company_name"
+                }
+              ],
+              staticClass: "rigisRigisterReviewListSearch__inputStyle",
+              attrs: { placeholder: "入力してください" },
+              domProps: { value: _vm.company_name },
+              on: {
+                input: function($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.company_name = $event.target.value
+                }
+              }
+            })
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "rigisRigisterReviewListSearch__inputContentStyle" },
+          [
+            _c(
+              "h1",
+              { staticClass: "rigisRigisterReviewListSearch__inputName" },
+              [_vm._v("代表者名")]
+            ),
+            _vm._v(" "),
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.representative,
+                  expression: "representative"
+                }
+              ],
+              staticClass: "rigisRigisterReviewListSearch__inputStyle",
+              attrs: { placeholder: "入力してください" },
+              domProps: { value: _vm.representative },
+              on: {
+                input: function($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.representative = $event.target.value
+                }
+              }
+            })
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "rigisRigisterReviewListSearch__inputContentStyle" },
+          [
+            _c(
+              "h1",
+              { staticClass: "rigisRigisterReviewListSearch__inputName" },
+              [_vm._v("所在地")]
+            ),
+            _vm._v(" "),
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.location,
+                  expression: "location"
+                }
+              ],
+              staticClass: "rigisRigisterReviewListSearch__inputStyle",
+              attrs: { placeholder: "入力してください" },
+              domProps: { value: _vm.location },
+              on: {
+                input: function($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.location = $event.target.value
+                }
+              }
+            })
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "rigisRigisterReviewListSearch__inputContentStyle" },
+          [
+            _c(
+              "h1",
+              { staticClass: "rigisRigisterReviewListSearch__inputName" },
+              [_vm._v("業界")]
+            ),
+            _vm._v(" "),
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.industry,
+                  expression: "industry"
+                }
+              ],
+              staticClass: "rigisRigisterReviewListSearch__inputStyle",
+              attrs: { placeholder: "入力してください" },
+              domProps: { value: _vm.industry },
+              on: {
+                input: function($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.industry = $event.target.value
+                }
+              }
+            })
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "rigisRigisterReviewListSearch__inputContentStyle" },
+          [
+            _c(
+              "h1",
+              { staticClass: "rigisRigisterReviewListSearch__inputName" },
+              [_vm._v("設立年度")]
+            ),
+            _vm._v(" "),
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.year_of_establishment,
+                  expression: "year_of_establishment"
+                }
+              ],
+              staticClass: "rigisRigisterReviewListSearch__inputStyle",
+              attrs: { placeholder: "入力してください" },
+              domProps: { value: _vm.year_of_establishment },
+              on: {
+                input: function($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.year_of_establishment = $event.target.value
+                }
+              }
+            })
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "rigisRigisterReviewListSearch__inputContentStyle" },
+          [
+            _c(
+              "h1",
+              { staticClass: "rigisRigisterReviewListSearch__inputName" },
+              [_vm._v("上場年")]
+            ),
+            _vm._v(" "),
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.listed_year,
+                  expression: "listed_year"
+                }
+              ],
+              staticClass: "rigisRigisterReviewListSearch__inputStyle",
+              attrs: { placeholder: "入力してください" },
+              domProps: { value: _vm.listed_year },
+              on: {
+                input: function($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.listed_year = $event.target.value
+                }
+              }
+            })
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "rigisRigisterReviewListSearch__inputContentStyle" },
+          [
+            _c(
+              "h1",
+              { staticClass: "rigisRigisterReviewListSearch__inputName" },
+              [_vm._v("従業員数")]
+            ),
+            _vm._v(" "),
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.number_of_employees,
+                  expression: "number_of_employees"
+                }
+              ],
+              staticClass: "rigisRigisterReviewListSearch__inputStyle",
+              attrs: { placeholder: "入力してください" },
+              domProps: { value: _vm.number_of_employees },
+              on: {
+                input: function($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.number_of_employees = $event.target.value
+                }
+              }
+            })
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "rigisRigisterReviewListSearch__inputContentStyle" },
+          [
+            _c(
+              "h1",
+              { staticClass: "rigisRigisterReviewListSearch__inputName" },
+              [_vm._v("口コミ数")]
+            ),
+            _vm._v(" "),
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.number_of_reviews,
+                  expression: "number_of_reviews"
+                }
+              ],
+              staticClass: "rigisRigisterReviewListSearch__inputStyle",
+              attrs: { placeholder: "入力してください" },
+              domProps: { value: _vm.number_of_reviews },
+              on: {
+                input: function($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.number_of_reviews = $event.target.value
+                }
+              }
+            })
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "rigisRigisterReviewListSearch__inputContentStyle" },
+          [
+            _c(
+              "h1",
+              { staticClass: "rigisRigisterReviewListSearch__inputName" },
+              [_vm._v("平均年収")]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass: "rigisRigisterReviewListSearch__betweenStyleWrap"
+              },
+              [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.average_annual_income,
+                      expression: "average_annual_income"
+                    }
+                  ],
+                  staticClass: "rigisRigisterReviewListSearch__betweenStyle",
+                  attrs: { placeholder: "入力してください" },
+                  domProps: { value: _vm.average_annual_income },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.average_annual_income = $event.target.value
+                    }
+                  }
+                }),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "rigisRigisterReviewListSearch__betweenStyleHoge"
+                  },
+                  [_vm._v("~")]
+                ),
+                _vm._v(" "),
+                _c("input", {
+                  staticClass: "rigisRigisterReviewListSearch__betweenStyle",
+                  attrs: { placeholder: "入力してください" }
+                })
+              ]
+            )
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "rigisRigisterReviewListSearch__inputContentStyle" },
+          [
+            _c(
+              "h1",
+              { staticClass: "rigisRigisterReviewListSearch__inputName" },
+              [_vm._v("平均年齢")]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass: "rigisRigisterReviewListSearch__betweenStyleWrap"
+              },
+              [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.average_age,
+                      expression: "average_age"
+                    }
+                  ],
+                  staticClass: "rigisRigisterReviewListSearch__betweenStyle",
+                  attrs: { placeholder: "入力してください" },
+                  domProps: { value: _vm.average_age },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.average_age = $event.target.value
+                    }
+                  }
+                }),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "rigisRigisterReviewListSearch__betweenStyleHoge"
+                  },
+                  [_vm._v("~")]
+                ),
+                _vm._v(" "),
+                _c("input", {
+                  staticClass: "rigisRigisterReviewListSearch__betweenStyle",
+                  attrs: { placeholder: "入力してください" }
+                })
+              ]
+            )
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "button",
+          {
+            staticClass: "rigisRigisterReviewListSearch__bottomStyle",
+            attrs: { type: "submit" }
+          },
+          [_vm._v("検索する")]
+        )
+      ]
+    )
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -12164,7 +12695,9 @@ var render = function() {
         }
       }),
       _vm._v(" "),
-      _c("SearchCompanyDataComponets"),
+      _c("SearchCompanyDataComponets", {
+        on: { searchstate: _vm.searchCompanyData }
+      }),
       _vm._v(" "),
       _c("SortCompanyDataComponets"),
       _vm._v(" "),
@@ -31915,7 +32448,9 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _SearchCompanyDataComponets_vue_vue_type_template_id_1efc8fa6___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./SearchCompanyDataComponets.vue?vue&type=template&id=1efc8fa6& */ "./resources/ts/components/search/SearchCompanyDataComponets.vue?vue&type=template&id=1efc8fa6&");
 /* harmony import */ var _SearchCompanyDataComponets_vue_vue_type_script_lang_ts_scoped_true___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./SearchCompanyDataComponets.vue?vue&type=script&lang=ts&scoped=true& */ "./resources/ts/components/search/SearchCompanyDataComponets.vue?vue&type=script&lang=ts&scoped=true&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* empty/unused harmony star reexport *//* harmony import */ var _SearchCompanyDataComponets_vue_vue_type_style_index_0_lang_scss_scope_true___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./SearchCompanyDataComponets.vue?vue&type=style&index=0&lang=scss&scope=true& */ "./resources/ts/components/search/SearchCompanyDataComponets.vue?vue&type=style&index=0&lang=scss&scope=true&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
 
 
 
@@ -31923,7 +32458,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
   _SearchCompanyDataComponets_vue_vue_type_script_lang_ts_scoped_true___WEBPACK_IMPORTED_MODULE_1__["default"],
   _SearchCompanyDataComponets_vue_vue_type_template_id_1efc8fa6___WEBPACK_IMPORTED_MODULE_0__["render"],
   _SearchCompanyDataComponets_vue_vue_type_template_id_1efc8fa6___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
@@ -31952,6 +32487,22 @@ component.options.__file = "resources/ts/components/search/SearchCompanyDataComp
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_ts_loader_index_js_ref_5_node_modules_vue_loader_lib_index_js_vue_loader_options_SearchCompanyDataComponets_vue_vue_type_script_lang_ts_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/ts-loader??ref--5!../../../../node_modules/vue-loader/lib??vue-loader-options!./SearchCompanyDataComponets.vue?vue&type=script&lang=ts&scoped=true& */ "./node_modules/ts-loader/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/ts/components/search/SearchCompanyDataComponets.vue?vue&type=script&lang=ts&scoped=true&");
 /* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_ts_loader_index_js_ref_5_node_modules_vue_loader_lib_index_js_vue_loader_options_SearchCompanyDataComponets_vue_vue_type_script_lang_ts_scoped_true___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/ts/components/search/SearchCompanyDataComponets.vue?vue&type=style&index=0&lang=scss&scope=true&":
+/*!********************************************************************************************************************!*\
+  !*** ./resources/ts/components/search/SearchCompanyDataComponets.vue?vue&type=style&index=0&lang=scss&scope=true& ***!
+  \********************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_2_node_modules_sass_loader_dist_cjs_js_ref_8_3_node_modules_vue_loader_lib_index_js_vue_loader_options_SearchCompanyDataComponets_vue_vue_type_style_index_0_lang_scss_scope_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader!../../../../node_modules/css-loader!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--8-2!../../../../node_modules/sass-loader/dist/cjs.js??ref--8-3!../../../../node_modules/vue-loader/lib??vue-loader-options!./SearchCompanyDataComponets.vue?vue&type=style&index=0&lang=scss&scope=true& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/ts/components/search/SearchCompanyDataComponets.vue?vue&type=style&index=0&lang=scss&scope=true&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_2_node_modules_sass_loader_dist_cjs_js_ref_8_3_node_modules_vue_loader_lib_index_js_vue_loader_options_SearchCompanyDataComponets_vue_vue_type_style_index_0_lang_scss_scope_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_2_node_modules_sass_loader_dist_cjs_js_ref_8_3_node_modules_vue_loader_lib_index_js_vue_loader_options_SearchCompanyDataComponets_vue_vue_type_style_index_0_lang_scss_scope_true___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_2_node_modules_sass_loader_dist_cjs_js_ref_8_3_node_modules_vue_loader_lib_index_js_vue_loader_options_SearchCompanyDataComponets_vue_vue_type_style_index_0_lang_scss_scope_true___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_2_node_modules_sass_loader_dist_cjs_js_ref_8_3_node_modules_vue_loader_lib_index_js_vue_loader_options_SearchCompanyDataComponets_vue_vue_type_style_index_0_lang_scss_scope_true___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+
 
 /***/ }),
 
@@ -32532,6 +33083,7 @@ var ComponyMenu = /** @class */ (function (_super) {
     Object.defineProperty(ComponyMenu.prototype, "getSelectComponyData", {
         // public lording : boolean = false;
         get: function () {
+            console.log(this.selectComponyData);
             return this.selectComponyData;
         },
         enumerable: false,
@@ -32544,12 +33096,15 @@ var ComponyMenu = /** @class */ (function (_super) {
     ComponyMenu.prototype.SET_SELECT_COMPONY_MENU = function (val) {
         this.selectComponyData = val;
     };
-    ComponyMenu.prototype.setSelectComponyMenu = function (params) {
+    ComponyMenu.prototype.SET_CONDITIONAL_SEARCH_COMPANY_DATE = function (val) {
+        this.selectComponyData = val;
+    };
+    ComponyMenu.prototype.setSelectComponyMenu = function (query) {
         return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, function () {
             var componyMenuDatas;
             return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__generator"])(this, function (_a) {
                 switch (_a.label) {
-                    case 0: return [4 /*yield*/, axios__WEBPACK_IMPORTED_MODULE_3___default.a.post('/api/searchCompanyDate', params)];
+                    case 0: return [4 /*yield*/, axios__WEBPACK_IMPORTED_MODULE_3___default.a.post('/api/searchCompanyDate', query)];
                     case 1:
                         componyMenuDatas = _a.sent();
                         //TODO:修正予定(.data.data.data)
@@ -32559,12 +33114,33 @@ var ComponyMenu = /** @class */ (function (_super) {
             });
         });
     };
+    ComponyMenu.prototype.setConditionalSearchCompanyDate = function (params, query) {
+        return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, function () {
+            var componyMenuDatas;
+            return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__generator"])(this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, axios__WEBPACK_IMPORTED_MODULE_3___default.a.post('/api/conditionalSearchCompanyDate', params, query)];
+                    case 1:
+                        componyMenuDatas = _a.sent();
+                        //TODO:修正予定(.data.data.data)
+                        this.SET_CONDITIONAL_SEARCH_COMPANY_DATE(componyMenuDatas);
+                        return [2 /*return*/];
+                }
+            });
+        });
+    };
     Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
         vuex_module_decorators__WEBPACK_IMPORTED_MODULE_1__["Mutation"]
     ], ComponyMenu.prototype, "SET_SELECT_COMPONY_MENU", null);
     Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
+        vuex_module_decorators__WEBPACK_IMPORTED_MODULE_1__["Mutation"]
+    ], ComponyMenu.prototype, "SET_CONDITIONAL_SEARCH_COMPANY_DATE", null);
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
         vuex_module_decorators__WEBPACK_IMPORTED_MODULE_1__["Action"]
     ], ComponyMenu.prototype, "setSelectComponyMenu", null);
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
+        vuex_module_decorators__WEBPACK_IMPORTED_MODULE_1__["Action"]
+    ], ComponyMenu.prototype, "setConditionalSearchCompanyDate", null);
     ComponyMenu = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
         Object(vuex_module_decorators__WEBPACK_IMPORTED_MODULE_1__["Module"])({
             dynamic: true,

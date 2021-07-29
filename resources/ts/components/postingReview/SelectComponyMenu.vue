@@ -3,10 +3,10 @@
     <div class="rigisRigisterReviewList">
       <div class="rigisRigisterReviewList__header">
         <h1 class="rigisRigisterReviewList__title">{{ settings.title }}</h1>
-        <h3>検索結果:<span>{{ displayDatas.total }}</span>件</h3>
+        <h3>検索結果:<span>{{ displayDatas.data.total }}</span>件</h3>
       </div>
       <DataTable
-        :displayDatas="displayDatas.data"
+        :displayDatas="displayDatas.data.data"
         :settings="settings"
       />
       <!-- 保留 -->
@@ -15,6 +15,8 @@
     </div>
   </div>
 </template>
+
+// TODO:検索機能まだ出来ていない
 
 <script lang="ts" scoped>
 import { Component,Prop,Vue } from 'vue-property-decorator';
