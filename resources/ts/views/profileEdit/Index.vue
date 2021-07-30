@@ -4,35 +4,27 @@
       :introTextTitle="introTextTitle"
       :introTextSub="introTextSub"
     />
-    <UserProfile/>
-    <MyReviewList/>
-    <MypeDmList/>
-    <MyFavoriteList/>
+    <Edit/>
   </div>
 </template>
 <script lang="ts" scoped>
 import { Component, Vue } from 'vue-property-decorator';
 import Intro from '@/components/intro/Intro';
-import UserProfile from '@/components/myPage/UserProfile';
-import MyReviewList from '@/components/myPage/MyReviewList';
-import MypeDmList from '@/components/myPage/MypeDmList';
-import MyFavoriteList from '@/components/myPage/MyFavoriteList';
+import Edit from '@/components/profileEdit/Edit';
 import { SETTINGS_APPLY_COMPANY } from '@/utils/setting-applyCompany'
 
 @Component({
   components: {
-    UserProfile,
     Intro,
-    MyReviewList,
-    MypeDmList,
-    MyFavoriteList
+    Edit
   }
 })
-export default class MyPage extends Vue {
+export default class ProfileEdit extends Vue {
 
   public introTextTitle: string = SETTINGS_APPLY_COMPANY.introTextTitle;
   public introTextSub: string = SETTINGS_APPLY_COMPANY.introTextSub;
 
-
 }
 </script>
+<style lang="scss" scope>
+</style>

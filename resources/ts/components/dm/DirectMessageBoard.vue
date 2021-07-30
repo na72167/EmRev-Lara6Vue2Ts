@@ -60,6 +60,7 @@ export default class DirectMessageBoard extends Vue {
   private created(){
     this.fetchData();
   }
+
 }
 </script>
 <style lang="scss" scope>

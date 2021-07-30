@@ -4,9 +4,37 @@
     <ul class="menuAbout__itemWrap">
       <!-- リンク関係 -->
       <!-- TODO:メニューから特定のリンクに飛んだ際にメニューバーが閉まらない -->
-      <span v-for="aboutMenu in aboutMenus" :key="aboutMenu.id">
-        <router-link :to="aboutMenu.link" class="menuAbout__itemWrap-lineNone">
-          <li class="menuAbout__itemWrap-item" @click="checkMenuState">{{aboutMenu.text}}</li>
+      <span>
+        <router-link :to="{ name: 'MyPage', query: { user_id: user_id }}" class="menuAbout__itemWrap-lineNone">
+          <li class="menuAbout__itemWrap-item" @click="checkMenuState">マイページ</li>
+        </router-link>
+        <!-- TODO:パス周りに問題あり -->
+        <router-link :to="{ name: 'ProfileEdit', query: { user_id: user_id }}" class="menuAbout__itemWrap-lineNone">
+          <li class="menuAbout__itemWrap-item" @click="checkMenuState">マイプロフィール</li>
+        </router-link>
+        <router-link :to="{ name: 'FavoriteReview', query: { user_id: user_id }}" class="menuAbout__itemWrap-lineNone">
+          <li class="menuAbout__itemWrap-item" @click="checkMenuState">お気に入りレビュー一覧</li>
+        </router-link>
+        <router-link to="aboutMenu.link" class="menuAbout__itemWrap-lineNone">
+          <li class="menuAbout__itemWrap-item" @click="checkMenuState">投稿されたレビュー一覧</li>
+        </router-link>
+        <router-link :to="{ name: 'EmployeeRegistration', query: { user_id: user_id }}" class="menuAbout__itemWrap-lineNone">
+          <li class="menuAbout__itemWrap-item" @click="checkMenuState">投稿者登録</li>
+        </router-link>
+        <router-link to="aboutMenu.link" class="menuAbout__itemWrap-lineNone">
+          <li class="menuAbout__itemWrap-item" @click="checkMenuState">閲覧履歴</li>
+        </router-link>
+        <router-link to="aboutMenu.link" class="menuAbout__itemWrap-lineNone">
+          <li class="menuAbout__itemWrap-item" @click="checkMenuState">登録社員一覧</li>
+        </router-link>
+        <router-link to="aboutMenu.link" class="menuAbout__itemWrap-lineNone">
+          <li class="menuAbout__itemWrap-item" @click="checkMenuState">パスワード変更</li>
+        </router-link>
+        <router-link to="/ApplyCompany" class="menuAbout__itemWrap-lineNone">
+          <li class="menuAbout__itemWrap-item" @click="checkMenuState">レビュー会社登録申請</li>
+        </router-link>
+        <router-link to="/Withdrawal" class="menuAbout__itemWrap-lineNone">
+          <li class="menuAbout__itemWrap-item" @click="checkMenuState">退会する</li>
         </router-link>
       </span>
     </ul>
@@ -15,25 +43,16 @@
 
 <script lang="ts" scoped>
 import { Component,Vue } from 'vue-property-decorator';
-import { aboutMenu } from '@/utils/header';
 import { toolStoreModule } from '@/store/modules/tool';
 import { OpenAboutMenu } from '@/store/models.d';
+import Cookies from "js-cookie"
 
 // Vue.js to TypeScriptの書き方一覧
 // https://qiita.com/ryo2132/items/4d43209ea89ad1297426
 
 @Component
 export default class AboutMenu extends Vue {
-
-  // private aboutMenuState: OpenAboutMenu = false;
-  public aboutMenus = aboutMenu;
-
-  // public checkMenuState(){
-  //   if (this.aboutMenuState === 'openAboutMenu'){
-  //     toolStoreModule.switchMenuComponent(false);
-  //   }
-  // }
-
+  public user_id = Cookies.get('user_id');
 }
 </script>
 
