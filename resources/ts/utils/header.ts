@@ -1,5 +1,6 @@
+import Cookies from "js-cookie"
 export const aboutMenu = [
-  { id: '1', text: 'マイページ', link: '`/mypage/${this.loginUserId}`' },
+  { id: '1', text: 'マイページ', name: 'MyPage',query: { user_id: Cookies.get('user_id')} },
   { id: '2', text: 'お気に入りレビュー一覧', link: '#' },
   { id: '3', text: '投稿されたレビュー一覧', link: '#' },
   { id: '4', text: '投稿者登録', link: '/EmployeeRegistration' },

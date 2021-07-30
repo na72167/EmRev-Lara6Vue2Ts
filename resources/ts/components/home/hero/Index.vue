@@ -10,7 +10,7 @@
         サンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプル
         サンプルサンプルサンプルサンプルサンプルサンプルサンプルサン
         </div>
-        <a class="hero__text-aboutLink" href="#index-about">このアプリについて</a>
+        <a class="hero__text-aboutLink" href="#index-about">このサービスについて</a>
       </div>
       <div v-if="!checkUserData">
         <SignUp
